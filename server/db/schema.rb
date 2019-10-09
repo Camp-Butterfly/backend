@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_09_220500) do
+ActiveRecord::Schema.define(version: 2019_10_09_222200) do
 
   create_table "butterflies", force: :cascade do |t|
     t.string "butterfly_name"
@@ -38,9 +38,9 @@ ActiveRecord::Schema.define(version: 2019_10_09_220500) do
     t.string "access_token"
     t.string "username"
     t.string "password"
-    t.string "images_owned"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "images_owned"
     t.index ["images_owned"], name: "index_users_on_images_owned"
   end
 

@@ -8,6 +8,6 @@
 
 
 10.times { Item.create!(name: "Item", description: "I am a description.") }
-10.times { Image.create!(image_name: "image", butterfly_name: "I am a butterfly name.") }
-#10.times { User.create!(username: "John", description: "I am a description.") }
-#10.times { Butterfly.create!(butterfly_name: "butterfly", description: "I am a description.") }
+10.times { Image.create!(image_name: "image", butterfly_name: "butterfly") }
+10.times { User.create!(access_token: "nohn", username: "John", password: "john") }
+10.times { Butterfly.create!(butterfly_name: "butterfly", image_file_name: "image_file", description: "I am a description.") }
