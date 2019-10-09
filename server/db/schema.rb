@@ -10,13 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_09_201403) do
+ActiveRecord::Schema.define(version: 2019_10_09_220500) do
+
+  create_table "butterflies", force: :cascade do |t|
+    t.string "butterfly_name"
+    t.string "image_file_name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string "image_name"
+    t.string "butterfly_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "access_token"
+    t.string "username"
+    t.string "password"
+    t.string "images_owned"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["images_owned"], name: "index_users_on_images_owned"
   end
 
 end
