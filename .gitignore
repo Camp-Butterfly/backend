@@ -6,24 +6,25 @@
 
 # Ignore bundler config.
 /.bundle
-
-# Ignore dependencies
-/node_modules
+/.DS_Store
+/server/.DS_Store
+/server/log/development.log
+/server/tmp/cache/bootsnap-load-path-cache
+/server/tmp/pids/server.pid
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+/server/db/*.sqlite3
+/server/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/server/log/*
+/server/tmp/*
+/server!/log/.keep
+/server!/tmp/.keep
 
 # Ignore uploaded files in development
-/storage/*
+/server/storage/*
 !/storage/.keep
-
 /node_modules
 /yarn-error.log
 
