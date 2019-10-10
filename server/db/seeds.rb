@@ -8,13 +8,13 @@
 
 
 # Basic image format
-10.times { Image.create!(image_name: "image", butterfly_name: "butterfly") }
+10.times { Image.create!(image_name: "image", butterfly_name: "butterfly", location: "Knowhere") }
 
 # User seed data
-1.times { User.create!(access_token: "nohn", username: "Lily", password: "butterfly") }
-1.times { User.create!(access_token: "nohn", username: "Belinda", password: "butterfly") }
-1.times { User.create!(access_token: "nohn", username: "Michael", password: "butterfly") }
-1.times { User.create!(access_token: "nohn", username: "Stephen", password: "butterfly") }
+# 1.times { User.create!(access_token: "nohn", username: "Lily", password: "butterfly") }
+# 1.times { User.create!(access_token: "nohn", username: "Belinda", password: "butterfly") }
+# 1.times { User.create!(access_token: "nohn", username: "Michael", password: "butterfly") }
+# 1.times { User.create!(access_token: "nohn", username: "Stephen", password: "butterfly") }
 
 # Butterfly seed data
 1.times { Butterfly.create!(butterfly_name: "Brush-footed", scientific_name: "Nymphalidae", image_file_name: "image_file", description: "Brush-footed description.") }
@@ -23,7 +23,9 @@
 1.times { Butterfly.create!(butterfly_name: "Parnassians/Swallowtails", scientific_name: "Papilionidae", image_file_name: "image_file", description: "Parnassians/Swallowtails description.") }
 1.times { Butterfly.create!(butterfly_name: "Skippers", scientific_name: "Hesperiidae", image_file_name: "image_file", description: "Skippers description.") }
 
-
+# rails g migration RemoveImagesOwnedFromUsers images_owned:string
 # rails g migration AddScientificNameToButterflies scientific_name:string
+# rails g migration AddLocationToImages location:string
+
 # rake db:reset
 # rake db:seed

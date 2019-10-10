@@ -2442,3 +2442,1177 @@ Completed 200 OK in 48ms (Views: 21.6ms | ActiveRecord: 1.6ms)
   ↳ db/seeds.rb:24
   [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
   ↳ db/seeds.rb:24
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (1.1ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.249417"], ["updated_at", "2019-10-10 20:26:47.249417"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.256331"], ["updated_at", "2019-10-10 20:26:47.256331"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.259311"], ["updated_at", "2019-10-10 20:26:47.259311"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.261836"], ["updated_at", "2019-10-10 20:26:47.261836"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.264532"], ["updated_at", "2019-10-10 20:26:47.264532"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.266945"], ["updated_at", "2019-10-10 20:26:47.266945"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.269418"], ["updated_at", "2019-10-10 20:26:47.269418"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.272124"], ["updated_at", "2019-10-10 20:26:47.272124"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.275067"], ["updated_at", "2019-10-10 20:26:47.275067"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:26:47.278297"], ["updated_at", "2019-10-10 20:26:47.278297"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Lily"], ["password", "butterfly"], ["created_at", "2019-10-10 20:26:47.299709"], ["updated_at", "2019-10-10 20:26:47.299709"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Belinda"], ["password", "butterfly"], ["created_at", "2019-10-10 20:26:47.304824"], ["updated_at", "2019-10-10 20:26:47.304824"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Michael"], ["password", "butterfly"], ["created_at", "2019-10-10 20:26:47.307959"], ["updated_at", "2019-10-10 20:26:47.307959"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Stephen"], ["password", "butterfly"], ["created_at", "2019-10-10 20:26:47.310657"], ["updated_at", "2019-10-10 20:26:47.310657"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mButterfly Create (0.7ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Brush-footed"], ["image_file_name", "image_file"], ["description", "Brush-footed description."], ["created_at", "2019-10-10 20:26:47.322855"], ["updated_at", "2019-10-10 20:26:47.322855"], ["scientific_name", "Nymphalidae"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mButterfly Create (0.5ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Harvesters"], ["image_file_name", "image_file"], ["description", "Harvesters description."], ["created_at", "2019-10-10 20:26:47.326319"], ["updated_at", "2019-10-10 20:26:47.326319"], ["scientific_name", "Miletinae"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mButterfly Create (0.3ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Metalmarks"], ["image_file_name", "image_file"], ["description", "Metalmarks description."], ["created_at", "2019-10-10 20:26:47.329085"], ["updated_at", "2019-10-10 20:26:47.329085"], ["scientific_name", "Riodinidae"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mButterfly Create (0.3ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Parnassians/Swallowtails"], ["image_file_name", "image_file"], ["description", "Parnassians/Swallowtails description."], ["created_at", "2019-10-10 20:26:47.331641"], ["updated_at", "2019-10-10 20:26:47.331641"], ["scientific_name", "Papilionidae"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mButterfly Create (0.7ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Skippers"], ["image_file_name", "image_file"], ["description", "Skippers description."], ["created_at", "2019-10-10 20:26:47.334095"], ["updated_at", "2019-10-10 20:26:47.334095"], ["scientific_name", "Hesperiidae"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+Started GET "/api/v1/butterflies.json" for ::1 at 2019-10-10 16:26:57 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::ButterfliesController#index as JSON
+  [1m[36mButterfly Load (0.3ms)[0m  [1m[34mSELECT "butterflies".* FROM "butterflies"[0m
+  ↳ app/controllers/api/v1/butterflies_controller.rb:3
+Completed 200 OK in 57ms (Views: 23.3ms | ActiveRecord: 2.9ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "butterflies"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "butterflies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "butterfly_name" varchar, "image_file_name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scientific_name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_name" varchar, "butterfly_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images_owned" varchar)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX "index_users_on_images_owned" ON "users" ("images_owned")[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191010201353)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191009222011),
+(20191009221903),
+(20191009220233),
+(20191009222200),
+(20191009214803),
+(20191009220500),
+(20191009201403);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-10 20:27:21.071721"], ["updated_at", "2019-10-10 20:27:21.071721"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "butterflies"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "butterflies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "butterfly_name" varchar, "image_file_name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scientific_name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_name" varchar, "butterfly_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images_owned" varchar)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX "index_users_on_images_owned" ON "users" ("images_owned")[0m
+  ↳ db/schema.rb:38
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191010201353)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191009222011),
+(20191009221903),
+(20191009220233),
+(20191009222200),
+(20191009214803),
+(20191009220500),
+(20191009201403);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-10 20:27:21.117432"], ["updated_at", "2019-10-10 20:27:21.117432"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-10-10 20:27:21.120936"], ["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.8ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.144258"], ["updated_at", "2019-10-10 20:27:21.144258"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.148677"], ["updated_at", "2019-10-10 20:27:21.148677"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.151780"], ["updated_at", "2019-10-10 20:27:21.151780"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.154669"], ["updated_at", "2019-10-10 20:27:21.154669"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.157077"], ["updated_at", "2019-10-10 20:27:21.157077"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.159713"], ["updated_at", "2019-10-10 20:27:21.159713"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.162497"], ["updated_at", "2019-10-10 20:27:21.162497"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.165025"], ["updated_at", "2019-10-10 20:27:21.165025"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.167406"], ["updated_at", "2019-10-10 20:27:21.167406"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:21.170078"], ["updated_at", "2019-10-10 20:27:21.170078"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Lily"], ["password", "butterfly"], ["created_at", "2019-10-10 20:27:21.181122"], ["updated_at", "2019-10-10 20:27:21.181122"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Belinda"], ["password", "butterfly"], ["created_at", "2019-10-10 20:27:21.184410"], ["updated_at", "2019-10-10 20:27:21.184410"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Michael"], ["password", "butterfly"], ["created_at", "2019-10-10 20:27:21.187223"], ["updated_at", "2019-10-10 20:27:21.187223"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Stephen"], ["password", "butterfly"], ["created_at", "2019-10-10 20:27:21.189846"], ["updated_at", "2019-10-10 20:27:21.189846"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mButterfly Create (0.5ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Brush-footed"], ["image_file_name", "image_file"], ["description", "Brush-footed description."], ["created_at", "2019-10-10 20:27:21.201639"], ["updated_at", "2019-10-10 20:27:21.201639"], ["scientific_name", "Nymphalidae"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Harvesters"], ["image_file_name", "image_file"], ["description", "Harvesters description."], ["created_at", "2019-10-10 20:27:21.205336"], ["updated_at", "2019-10-10 20:27:21.205336"], ["scientific_name", "Miletinae"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mButterfly Create (0.3ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Metalmarks"], ["image_file_name", "image_file"], ["description", "Metalmarks description."], ["created_at", "2019-10-10 20:27:21.207780"], ["updated_at", "2019-10-10 20:27:21.207780"], ["scientific_name", "Riodinidae"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Parnassians/Swallowtails"], ["image_file_name", "image_file"], ["description", "Parnassians/Swallowtails description."], ["created_at", "2019-10-10 20:27:21.210234"], ["updated_at", "2019-10-10 20:27:21.210234"], ["scientific_name", "Papilionidae"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mButterfly Create (0.6ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Skippers"], ["image_file_name", "image_file"], ["description", "Skippers description."], ["created_at", "2019-10-10 20:27:21.212677"], ["updated_at", "2019-10-10 20:27:21.212677"], ["scientific_name", "Hesperiidae"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.615828"], ["updated_at", "2019-10-10 20:27:30.615828"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.7ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.628216"], ["updated_at", "2019-10-10 20:27:30.628216"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.632588"], ["updated_at", "2019-10-10 20:27:30.632588"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.635665"], ["updated_at", "2019-10-10 20:27:30.635665"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.638631"], ["updated_at", "2019-10-10 20:27:30.638631"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.641575"], ["updated_at", "2019-10-10 20:27:30.641575"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.644522"], ["updated_at", "2019-10-10 20:27:30.644522"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.7ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.647822"], ["updated_at", "2019-10-10 20:27:30.647822"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.651404"], ["updated_at", "2019-10-10 20:27:30.651404"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 20:27:30.654288"], ["updated_at", "2019-10-10 20:27:30.654288"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Lily"], ["password", "butterfly"], ["created_at", "2019-10-10 20:27:30.674054"], ["updated_at", "2019-10-10 20:27:30.674054"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Belinda"], ["password", "butterfly"], ["created_at", "2019-10-10 20:27:30.677118"], ["updated_at", "2019-10-10 20:27:30.677118"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Michael"], ["password", "butterfly"], ["created_at", "2019-10-10 20:27:30.679719"], ["updated_at", "2019-10-10 20:27:30.679719"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("access_token", "username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["access_token", "nohn"], ["username", "Stephen"], ["password", "butterfly"], ["created_at", "2019-10-10 20:27:30.682736"], ["updated_at", "2019-10-10 20:27:30.682736"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mButterfly Create (0.5ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Brush-footed"], ["image_file_name", "image_file"], ["description", "Brush-footed description."], ["created_at", "2019-10-10 20:27:30.696016"], ["updated_at", "2019-10-10 20:27:30.696016"], ["scientific_name", "Nymphalidae"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Harvesters"], ["image_file_name", "image_file"], ["description", "Harvesters description."], ["created_at", "2019-10-10 20:27:30.699524"], ["updated_at", "2019-10-10 20:27:30.699524"], ["scientific_name", "Miletinae"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mButterfly Create (0.5ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Metalmarks"], ["image_file_name", "image_file"], ["description", "Metalmarks description."], ["created_at", "2019-10-10 20:27:30.702355"], ["updated_at", "2019-10-10 20:27:30.702355"], ["scientific_name", "Riodinidae"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Parnassians/Swallowtails"], ["image_file_name", "image_file"], ["description", "Parnassians/Swallowtails description."], ["created_at", "2019-10-10 20:27:30.705522"], ["updated_at", "2019-10-10 20:27:30.705522"], ["scientific_name", "Papilionidae"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mButterfly Create (1.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Skippers"], ["image_file_name", "image_file"], ["description", "Skippers description."], ["created_at", "2019-10-10 20:27:30.709438"], ["updated_at", "2019-10-10 20:27:30.709438"], ["scientific_name", "Hesperiidae"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+Started GET "/api/v1/butterflies.json" for ::1 at 2019-10-10 17:04:21 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::ButterfliesController#index as JSON
+  [1m[36mButterfly Load (0.7ms)[0m  [1m[34mSELECT "butterflies".* FROM "butterflies"[0m
+  ↳ app/controllers/api/v1/butterflies_controller.rb:3
+Completed 200 OK in 55ms (Views: 18.8ms | ActiveRecord: 5.3ms)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "butterflies"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "butterflies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "butterfly_name" varchar, "image_file_name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scientific_name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_name" varchar, "butterfly_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images_owned" varchar)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_users_on_images_owned" ON "users" ("images_owned")[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191010201353)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191009222011),
+(20191009221903),
+(20191009220233),
+(20191009222200),
+(20191009214803),
+(20191009220500),
+(20191009201403);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-10 22:24:38.839366"], ["updated_at", "2019-10-10 22:24:38.839366"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "butterflies"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "butterflies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "butterfly_name" varchar, "image_file_name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scientific_name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_name" varchar, "butterfly_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images_owned" varchar)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX "index_users_on_images_owned" ON "users" ("images_owned")[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191010201353)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191009222011),
+(20191009221903),
+(20191009220233),
+(20191009222200),
+(20191009214803),
+(20191009220500),
+(20191009201403);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-10 22:24:38.897163"], ["updated_at", "2019-10-10 22:24:38.897163"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (1.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-10-10 22:24:38.903096"], ["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:38.986387"], ["updated_at", "2019-10-10 22:24:38.986387"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:38.989742"], ["updated_at", "2019-10-10 22:24:38.989742"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:38.992404"], ["updated_at", "2019-10-10 22:24:38.992404"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:38.995580"], ["updated_at", "2019-10-10 22:24:38.995580"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:38.998650"], ["updated_at", "2019-10-10 22:24:38.998650"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:39.001760"], ["updated_at", "2019-10-10 22:24:39.001760"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:39.004622"], ["updated_at", "2019-10-10 22:24:39.004622"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.6ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:39.013084"], ["updated_at", "2019-10-10 22:24:39.013084"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:39.017429"], ["updated_at", "2019-10-10 22:24:39.017429"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:24:39.020914"], ["updated_at", "2019-10-10 22:24:39.020914"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Brush-footed"], ["image_file_name", "image_file"], ["description", "Brush-footed description."], ["created_at", "2019-10-10 22:24:39.079588"], ["updated_at", "2019-10-10 22:24:39.079588"], ["scientific_name", "Nymphalidae"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Harvesters"], ["image_file_name", "image_file"], ["description", "Harvesters description."], ["created_at", "2019-10-10 22:24:39.083128"], ["updated_at", "2019-10-10 22:24:39.083128"], ["scientific_name", "Miletinae"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Metalmarks"], ["image_file_name", "image_file"], ["description", "Metalmarks description."], ["created_at", "2019-10-10 22:24:39.085818"], ["updated_at", "2019-10-10 22:24:39.085818"], ["scientific_name", "Riodinidae"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mButterfly Create (0.8ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Parnassians/Swallowtails"], ["image_file_name", "image_file"], ["description", "Parnassians/Swallowtails description."], ["created_at", "2019-10-10 22:24:39.088937"], ["updated_at", "2019-10-10 22:24:39.088937"], ["scientific_name", "Papilionidae"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mButterfly Create (0.8ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Skippers"], ["image_file_name", "image_file"], ["description", "Skippers description."], ["created_at", "2019-10-10 22:24:39.094102"], ["updated_at", "2019-10-10 22:24:39.094102"], ["scientific_name", "Hesperiidae"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "butterflies"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "butterflies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "butterfly_name" varchar, "image_file_name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scientific_name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_name" varchar, "butterfly_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images_owned" varchar)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX "index_users_on_images_owned" ON "users" ("images_owned")[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191010201353)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191009222011),
+(20191009221903),
+(20191009220233),
+(20191009222200),
+(20191009214803),
+(20191009220500),
+(20191009201403);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-10 22:26:25.386258"], ["updated_at", "2019-10-10 22:26:25.386258"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "butterflies"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "butterflies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "butterfly_name" varchar, "image_file_name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scientific_name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_name" varchar, "butterfly_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images_owned" varchar)[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX "index_users_on_images_owned" ON "users" ("images_owned")[0m
+  ↳ db/schema.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191010201353)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191009222011),
+(20191009221903),
+(20191009220233),
+(20191009222200),
+(20191009214803),
+(20191009220500),
+(20191009201403);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-10 22:26:25.428881"], ["updated_at", "2019-10-10 22:26:25.428881"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-10-10 22:26:25.432604"], ["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddLocationToImages (20191010222547)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "images" ADD "location" varchar[0m
+  ↳ db/migrate/20191010222547_add_location_to_images.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191010222547"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "butterflies"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "butterflies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "butterfly_name" varchar, "image_file_name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scientific_name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_name" varchar, "butterfly_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "location" varchar)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:32
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:39
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images_owned" varchar)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX "index_users_on_images_owned" ON "users" ("images_owned")[0m
+  ↳ db/schema.rb:39
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191010222547)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191009222011),
+(20191009221903),
+(20191009220233),
+(20191010201353),
+(20191009222200),
+(20191009214803),
+(20191009220500),
+(20191009201403);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-10 22:26:37.408150"], ["updated_at", "2019-10-10 22:26:37.408150"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "butterflies"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "butterflies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "butterfly_name" varchar, "image_file_name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scientific_name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  ↳ db/schema.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_name" varchar, "butterfly_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "location" varchar)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "items"[0m
+  ↳ db/schema.rb:32
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:39
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "access_token" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "images_owned" varchar)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX "index_users_on_images_owned" ON "users" ("images_owned")[0m
+  ↳ db/schema.rb:39
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20191010222547)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20191009222011),
+(20191009221903),
+(20191009220233),
+(20191010201353),
+(20191009222200),
+(20191009214803),
+(20191009220500),
+(20191009201403);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-10 22:26:37.446238"], ["updated_at", "2019-10-10 22:26:37.446238"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-10-10 22:26:37.450200"], ["key", "environment"]]
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.471993"], ["updated_at", "2019-10-10 22:26:37.471993"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.475024"], ["updated_at", "2019-10-10 22:26:37.475024"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.7ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.479138"], ["updated_at", "2019-10-10 22:26:37.479138"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.487973"], ["updated_at", "2019-10-10 22:26:37.487973"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.492322"], ["updated_at", "2019-10-10 22:26:37.492322"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.495690"], ["updated_at", "2019-10-10 22:26:37.495690"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.498737"], ["updated_at", "2019-10-10 22:26:37.498737"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.501282"], ["updated_at", "2019-10-10 22:26:37.501282"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.503733"], ["updated_at", "2019-10-10 22:26:37.503733"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:37.506239"], ["updated_at", "2019-10-10 22:26:37.506239"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Brush-footed"], ["image_file_name", "image_file"], ["description", "Brush-footed description."], ["created_at", "2019-10-10 22:26:37.517535"], ["updated_at", "2019-10-10 22:26:37.517535"], ["scientific_name", "Nymphalidae"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mButterfly Create (0.3ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Harvesters"], ["image_file_name", "image_file"], ["description", "Harvesters description."], ["created_at", "2019-10-10 22:26:37.520397"], ["updated_at", "2019-10-10 22:26:37.520397"], ["scientific_name", "Miletinae"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Metalmarks"], ["image_file_name", "image_file"], ["description", "Metalmarks description."], ["created_at", "2019-10-10 22:26:37.523363"], ["updated_at", "2019-10-10 22:26:37.523363"], ["scientific_name", "Riodinidae"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Parnassians/Swallowtails"], ["image_file_name", "image_file"], ["description", "Parnassians/Swallowtails description."], ["created_at", "2019-10-10 22:26:37.526825"], ["updated_at", "2019-10-10 22:26:37.526825"], ["scientific_name", "Papilionidae"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mButterfly Create (0.4ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Skippers"], ["image_file_name", "image_file"], ["description", "Skippers description."], ["created_at", "2019-10-10 22:26:37.529644"], ["updated_at", "2019-10-10 22:26:37.529644"], ["scientific_name", "Hesperiidae"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.6ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.021467"], ["updated_at", "2019-10-10 22:26:44.021467"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.025263"], ["updated_at", "2019-10-10 22:26:44.025263"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.7ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.028028"], ["updated_at", "2019-10-10 22:26:44.028028"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.031377"], ["updated_at", "2019-10-10 22:26:44.031377"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.034307"], ["updated_at", "2019-10-10 22:26:44.034307"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.037065"], ["updated_at", "2019-10-10 22:26:44.037065"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.3ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.040213"], ["updated_at", "2019-10-10 22:26:44.040213"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.042738"], ["updated_at", "2019-10-10 22:26:44.042738"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.045469"], ["updated_at", "2019-10-10 22:26:44.045469"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("image_name", "butterfly_name", "created_at", "updated_at", "location") VALUES (?, ?, ?, ?, ?)[0m  [["image_name", "image"], ["butterfly_name", "butterfly"], ["created_at", "2019-10-10 22:26:44.048109"], ["updated_at", "2019-10-10 22:26:44.048109"], ["location", "Knowhere"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mButterfly Create (0.8ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Brush-footed"], ["image_file_name", "image_file"], ["description", "Brush-footed description."], ["created_at", "2019-10-10 22:26:44.078279"], ["updated_at", "2019-10-10 22:26:44.078279"], ["scientific_name", "Nymphalidae"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mButterfly Create (0.6ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Harvesters"], ["image_file_name", "image_file"], ["description", "Harvesters description."], ["created_at", "2019-10-10 22:26:44.082519"], ["updated_at", "2019-10-10 22:26:44.082519"], ["scientific_name", "Miletinae"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mButterfly Create (0.6ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Metalmarks"], ["image_file_name", "image_file"], ["description", "Metalmarks description."], ["created_at", "2019-10-10 22:26:44.086322"], ["updated_at", "2019-10-10 22:26:44.086322"], ["scientific_name", "Riodinidae"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mButterfly Create (0.8ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Parnassians/Swallowtails"], ["image_file_name", "image_file"], ["description", "Parnassians/Swallowtails description."], ["created_at", "2019-10-10 22:26:44.090595"], ["updated_at", "2019-10-10 22:26:44.090595"], ["scientific_name", "Papilionidae"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mButterfly Create (0.8ms)[0m  [1m[32mINSERT INTO "butterflies" ("butterfly_name", "image_file_name", "description", "created_at", "updated_at", "scientific_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["butterfly_name", "Skippers"], ["image_file_name", "image_file"], ["description", "Skippers description."], ["created_at", "2019-10-10 22:26:44.094898"], ["updated_at", "2019-10-10 22:26:44.094898"], ["scientific_name", "Hesperiidae"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+Started GET "/" for ::1 at 2019-10-10 18:26:56 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/uks/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/uks/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/uks/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (6.8ms)
+Completed 200 OK in 35ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/butterflies.json" for ::1 at 2019-10-10 18:27:03 -0400
+Processing by Api::V1::ButterfliesController#index as JSON
+  [1m[36mButterfly Load (4.9ms)[0m  [1m[34mSELECT "butterflies".* FROM "butterflies"[0m
+  ↳ app/controllers/api/v1/butterflies_controller.rb:3
+Completed 200 OK in 142ms (Views: 69.5ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/api/v1/images.json" for ::1 at 2019-10-10 18:27:09 -0400
+Processing by Api::V1::ImagesController#index as JSON
+  [1m[36mImage Load (2.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/controllers/api/v1/images_controller.rb:3
+Completed 200 OK in 70ms (Views: 53.2ms | ActiveRecord: 2.9ms)
+
+
