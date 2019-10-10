@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_09_222200) do
+ActiveRecord::Schema.define(version: 2019_10_10_201353) do
 
   create_table "butterflies", force: :cascade do |t|
     t.string "butterfly_name"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_10_09_222200) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "scientific_name"
   end
 
   create_table "images", force: :cascade do |t|

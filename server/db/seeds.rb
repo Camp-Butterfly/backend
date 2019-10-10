@@ -7,7 +7,23 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-10.times { Item.create!(name: "Item", description: "I am a description.") }
+# Basic image format
 10.times { Image.create!(image_name: "image", butterfly_name: "butterfly") }
-10.times { User.create!(access_token: "nohn", username: "John", password: "john") }
-10.times { Butterfly.create!(butterfly_name: "butterfly", image_file_name: "image_file", description: "I am a description.") }
+
+# User seed data
+1.times { User.create!(access_token: "nohn", username: "Lily", password: "butterfly") }
+1.times { User.create!(access_token: "nohn", username: "Belinda", password: "butterfly") }
+1.times { User.create!(access_token: "nohn", username: "Michael", password: "butterfly") }
+1.times { User.create!(access_token: "nohn", username: "Stephen", password: "butterfly") }
+
+# Butterfly seed data
+1.times { Butterfly.create!(butterfly_name: "Brush-footed", scientific_name: "Nymphalidae", image_file_name: "image_file", description: "Brush-footed description.") }
+1.times { Butterfly.create!(butterfly_name: "Harvesters", scientific_name: "Miletinae", image_file_name: "image_file", description: "Harvesters description.") }
+1.times { Butterfly.create!(butterfly_name: "Metalmarks", scientific_name: "Riodinidae", image_file_name: "image_file", description: "Metalmarks description.") }
+1.times { Butterfly.create!(butterfly_name: "Parnassians/Swallowtails", scientific_name: "Papilionidae", image_file_name: "image_file", description: "Parnassians/Swallowtails description.") }
+1.times { Butterfly.create!(butterfly_name: "Skippers", scientific_name: "Hesperiidae", image_file_name: "image_file", description: "Skippers description.") }
+
+
+# rails g migration AddScientificNameToButterflies scientific_name:string
+# rake db:reset
+# rake db:seed
