@@ -42,3 +42,26 @@ insert seed data into local backend server:
 start development server:
 
 `rails server`
+
+## POST
+
+something of the form:
+
+`
+	url: "http://localhost/api/v1/images",
+	type: "POST",
+	data: { image: { image_name: name, butterfly_name: b_name, location: location }	}
+	success: response => {
+	}
+`
+
+`
+	url: "http://localhost/api/v1/butterflies",
+	type: "POST",
+	data: { butterfly: { butterfly_name: b_name, scientific_name: s_name, image_file_name: i_name, description: desc }	}
+	success: response => {
+	}
+`
+
+
+
