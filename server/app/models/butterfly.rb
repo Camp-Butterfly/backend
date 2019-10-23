@@ -1,2 +1,0 @@
-class Butterfly < ApplicationRecord
-end
