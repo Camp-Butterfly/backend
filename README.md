@@ -68,11 +68,9 @@ start development server:
 #### GET
 
 ```
-	url: "http://localhost/api/v1/images",
-	type: "GET",
-	data: { image: { image_name: name, butterfly_name: b_name, location: location }	}
-	success: response => {
-	}
+	.getJSON("http://localhost/api/v1/images.json", (response) => { this.setState({ butterflies: response})	});
+	
+	.getJSON("http://localhost/api/v1/butterflies.json", (response) => { this.setState({ butterflies: response})	});
 ```
 
 
