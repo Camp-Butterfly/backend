@@ -10,9 +10,10 @@
 /src/.DS_store
 /backend/.DS_Store
 /backend/log/*
-/backend/tmp/cache/bootsnap-load-path-cache/
-/backend/tmp/cache/bootsnap-compile-cache/*
+/tmp/cache/bootsnap-load-path-cache
+/tmp/cache/bootsnap-compile-cache/*
 /backend/tmp/pids/server.pid
+/log/development.log
 
 # Ignore the default SQLite database.
 /server/db/*.sqlite3
