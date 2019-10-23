@@ -31,6 +31,10 @@ start development server:
 
 Ruby on Rails application that provides a backend API for the application.
 
+setup backend:
+
+`rake db:setup`
+
 create postgres models:	
 
 `rails db:migrate`
@@ -62,6 +66,17 @@ something of the form:
 	success: response => {
 	}
 `
+
+## GET
+
+`
+	url: "http://localhost/api/v1/images",
+	type: "GET",
+	data: { image: { image_name: name, butterfly_name: b_name, location: location }	}
+	success: response => {
+	}
+`
+
 
 
 
