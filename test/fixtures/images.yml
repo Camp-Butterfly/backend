@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  image_name: MyString
+  butterfly_name: MyString
+  location: MyString
+  created_at: 2019-10-22 20:02:55
+  updated_at: 2019-10-22 20:02:55
+
+two:
+  image_name: MyString
+  butterfly_name: MyString
+  location: MyString
+  created_at: 2019-10-22 20:02:55
+  updated_at: 2019-10-22 20:02:55
