@@ -3,10 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.1'
 
-# gem for respond_to
+# Provides respond_to for GET json requests
 gem 'responders'
 
-# Allows file uploads
+# Provides mount_uploader for POST file requests
 gem 'carrierwave'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
