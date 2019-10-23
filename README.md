@@ -31,7 +31,7 @@ start development server:
 
 Ruby on Rails application that provides a backend API for the application.
 
-create sqlite models:	
+create postgres models:	
 
 `rails db:migrate`
 
