@@ -31,21 +31,27 @@ start development server:
 
 Ruby on Rails application that provides a backend API for the application.
 
-setup backend:
+If Ruby is not installed on your machine, you can follow DigitalOcean's walkthrough: https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-macos
+
+cd into _/backend_ directory and run the following commands:
+
+_sets up backend_
 
 `rake db:setup`
 
-create postgres models:	
+_create postgres models_
 
 `rails db:migrate`
 
-insert seed data into local backend server:
+_insert seed data into local backend server_
 
 `rake db:seed`
 
-start development server:
+_start development server_
 
 `rails server`
+
+if you visit `http://localhost:3001` in any browser, the default homepage of ruby on rails should be visible.
 
 #### POST
 
