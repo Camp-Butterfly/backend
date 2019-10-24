@@ -7,7 +7,7 @@
 # Ignore bundler config.
 /.bundle
 /.DS_Store
-/src/.DS_store
+/app/.DS_store
 /backend/.DS_Store
 /backend/log/*
 /tmp/cache/bootsnap-load-path-cache
