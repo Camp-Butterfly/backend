@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.3.1'
 
+# Provide cors access
+gem 'rack-cors'
+
 # Provides respond_to for GET json requests
 gem 'responders'
 
