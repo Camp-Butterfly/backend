@@ -73,6 +73,42 @@ start development server:
 	.getJSON("http://localhost/api/v1/butterflies.json", (response) => { this.setState({ butterflies: response})	});
 ```
 
+#### DELETE
+
+```
+	url: `/api/v1/images/${id}`,
+        type: 'DELETE',
+        success(response) {
+            console.log('successfully removed item')
+        }
+```
+
+
+```
+	url: `/api/v1/butterflies/${id}`,
+        type: 'DELETE',
+        success(response) {
+            console.log('successfully removed item')
+        }
+```
+
+#### UPDATE
+
+```
+	url: `/api/v1/images/${id}`,
+        type: 'PUT',
+        success(response) {
+            console.log('successfully removed item')
+        }
+```
+
+```
+	url: `/api/v1/butterflies/${id}`,
+        type: 'PUT',
+        success(response) {
+            console.log('successfully removed item')
+        }
+```
 
 
 
