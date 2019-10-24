@@ -50,7 +50,7 @@ start development server:
 #### POST
 
 ```
-	url: "http://localhost/api/v1/images",
+	url: "http://localhost:3001/api/v1/images",
 	type: "POST",
 	data: { image: { image_name: name, butterfly_name: b_name, location: location }	}
 	success: response => {
@@ -58,7 +58,7 @@ start development server:
 ```
 
 ```
-	url: "http://localhost/api/v1/butterflies",
+	url: "http://localhost:3001/api/v1/butterflies",
 	type: "POST",
 	data: { butterfly: { butterfly_name: b_name, scientific_name: s_name, image_file_name: i_name, description: desc }	}
 	success: response => {
@@ -68,7 +68,7 @@ start development server:
 #### GET
 
 ```
-	.getJSON("http://localhost/api/v1/images.json", (response) => { this.setState({ butterflies: response})	});
+	.getJSON("http://localhost:3001/api/v1/images.json", (response) => { this.setState({ butterflies: response})	});
 	
 	.getJSON("http://localhost/api/v1/butterflies.json", (response) => { this.setState({ butterflies: response})	});
 ```
