@@ -3,6 +3,10 @@ class Api::V1::ImagesController < Api::V1::BaseController
     respond_with Image.all
   end
 
+  #def new
+  #  @image = Image.new
+  #end
+
   def create
     respond_with :api, :v1, Image.create(image_params)
   end
@@ -20,6 +24,6 @@ class Api::V1::ImagesController < Api::V1::BaseController
   private
 
     def image_params
-      params.require(:image).permit(:id, :image_name, :butterfly_name, :attachment)
+      params.require(:image).permit(:id, :image_name, :butterfly_name, :location, :attachment)
     end
 end
