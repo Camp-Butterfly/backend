@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+/** Navigation Page styling **/
+
+.search {
+  margin-top: 10px;
+}
+
+.search-button {
+  margin-left: 5px;
+}
+
+/** Query Styling **/
+
+.query {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #f2f2f2;
+  height: 200px;
+  width: 200px;
+}
+
+.query-image {
+  width: 100px;
+}
+
+
+
+/** Gallery Page styling **/
+
+/** Landing Page styling **/
+
+/** Game Styling **/
