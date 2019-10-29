@@ -4,6 +4,7 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+# Rails App
 # Ignore bundler config.
 /.bundle
 .DS_Store
@@ -41,3 +42,26 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# React App
+# dependencies
+/basic/node_modules
+/basic/.pnp
+/basic/.pnp.js
+
+# testing
+/basic//coverage
+
+# production
+/basic//build
+
+# misc
+/basic/.DS_Store
+/basic/.env.local
+/basic/.env.development.local
+/basic/.env.test.local
+/basic/.env.production.local
+
+/basic/npm-debug.log*
+/basic/yarn-debug.log*
+/basic/yarn-error.log*
