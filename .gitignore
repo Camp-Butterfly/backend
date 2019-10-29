@@ -9,6 +9,8 @@
 .DS_Store
 /app/.DS_store
 /backend/.DS_Store
+/app/controllers/.DS_Store
+/app/controllers/api/.DS_Store
 /backend/log/*
 /tmp/cache/bootsnap-load-path-cache
 /tmp/cache/bootsnap-compile-cache/*
