@@ -16,6 +16,7 @@
 /log/development.log
 /db/migrate/*
 /tmp/pids/server.pid
+/tmp/cache/bootsnap-compile-cache/
 
 # Ignore the default SQLite database.
 /server/db/*.sqlite3
