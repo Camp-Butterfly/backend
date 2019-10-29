@@ -1,4 +1,4 @@
 class Image < ApplicationRecord
-	# use mount_uploader for file upload
-	mount_uploader :image, ImageUploader
+	# use ImageUploader for file upload in this model
+	#mount_uploader :image, ImageUploader
 end
