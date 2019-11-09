@@ -14,9 +14,9 @@ class Query extends Component {
         <div>Scientific Name: {this.props.data.scientific_name} </div>
             <br/>
         <div>Image file name: {this.props.data.attachment} </div>
-            <img 
+            {/*<img 
             	className="query-image"
-            	src={file_extension}></img>
+            	src={file_extension}></img>*/}
             <br/>
             {console.log(file_extension)}
         <div>Description: {this.props.data.description} </div>

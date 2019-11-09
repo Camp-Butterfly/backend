@@ -34,7 +34,7 @@ class GalleryForm extends Component {
 
   async addImage(event) {
     event.preventDefault();
-
+    
     let new_image = { 
         "image_name": this.state.image_name,
         "butterfly_name": this.state.scientific_name,
@@ -43,7 +43,7 @@ class GalleryForm extends Component {
     };
     console.log(new_image);
     //let data = JSON.stringify(new_image,null);
-    await axios.post("http://localhost:3001/api/v1/images", new_image)
+    await axios.post("http://enigmatic-badlands-58618.herokuapp.com/api/v1/images", new_image)
         .catch(error => {
           if(error.response) {
             console.log(error.response);

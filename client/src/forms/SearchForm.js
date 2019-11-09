@@ -22,13 +22,12 @@ class SearchForm extends Component {
 
   fetchQueryResults(event) {
     event.preventDefault();
-    //let search = "https://localhost:3001/" + this.state.query;
-    let search = "http://localhost:3001/api/v1/images.json";
+    let search = "https://enigmatic-badlands-58618.herokuapp.com/api/v1/butterflies.json?";
       axios.get(search)
       .then(result => {
           this.setState({result:result.data});
           console.log(result.data);
-        })
+        });
     }
 
   render() {

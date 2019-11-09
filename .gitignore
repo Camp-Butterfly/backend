@@ -20,6 +20,8 @@
 /db/migrate/*
 /tmp/pids/server.pid
 /tmp/cache/bootsnap-compile-cache/
+/client/node_modules/.cache/babel-loader/*
+/client/node_modules/.cache/eslint-loader/*
 
 # Ignore the default SQLite database.
 /server/db/*.sqlite3

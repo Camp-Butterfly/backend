@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Image seed data
-10.times { Image.create!(image_name: "image", butterfly_name: "butterfly", location: "Knowhere") }
+10.times { Image.create!(image_file_name: "image", butterfly_name: "butterfly", location: "Knowhere") }
 
 
 # Butterfly seed data
