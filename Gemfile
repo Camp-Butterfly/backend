@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# add graphql to query database
+gem 'graphql'
+
 # Provide cors access
 gem 'rack-cors'
 

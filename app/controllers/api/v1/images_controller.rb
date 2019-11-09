@@ -3,6 +3,9 @@ class Api::V1::ImagesController < Api::V1::BaseController
     respond_with Image.all
   end
 
+  def name
+    respone_with Image.find(params[:butterfly_name])
+
   #def new
   #  @image = Image.new
   #end
