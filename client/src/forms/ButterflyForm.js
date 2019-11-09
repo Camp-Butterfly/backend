@@ -38,7 +38,7 @@ class AddForm extends Component {
         "description": this.state.description
    };
    //let data = JSON.stringify(new_butterfly,null);
-   await axios.post("http://localhost:3001/api/v1/butterflies", new_butterfly)
+   await axios.post("http://enigmatic-badlands-58618.herokuapp.com/api/v1/butterflies", new_butterfly)
       .catch(error => {
         if(error.response) {
           console.log(error.response);
@@ -80,10 +80,10 @@ class AddForm extends Component {
             </label>
               <input
                   className="name"
-                  type="string"
-                  name="image_file_name"
+                  type="file"
+                  name="attachment"
                   value={this.state.value}
-                  onChange={this.updateItem}
+                  onChange={this.updateImage}
                 />
             <br/>
             <label>

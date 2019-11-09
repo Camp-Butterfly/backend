@@ -22,7 +22,7 @@ class SearchForm extends Component {
 
   fetchQueryResults(event) {
     event.preventDefault();
-    let search = "https://enigmatic-badlands-58618.herokuapp.com/api/v1/butterflies.json?";
+    let search = "https://enigmatic-badlands-58618.herokuapp.com/api/v1/images.json?";
       axios.get(search)
       .then(result => {
           this.setState({result:result.data});

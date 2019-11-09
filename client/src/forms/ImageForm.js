@@ -8,7 +8,7 @@ class GalleryForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        image_name: '',
+        image_file_name: '',
         butterfly_name: '',
         location: '',
         attachment: ''
@@ -36,14 +36,14 @@ class GalleryForm extends Component {
     event.preventDefault();
     
     let new_image = { 
-        "image_name": this.state.image_name,
+        "image_file_name": this.state.image_name,
         "butterfly_name": this.state.scientific_name,
         "location": this.state.location,
         "attachment": this.state.attachment
     };
     console.log(new_image);
     //let data = JSON.stringify(new_image,null);
-    await axios.post("http://enigmatic-badlands-58618.herokuapp.com/api/v1/images", new_image)
+    await axios.post("https://enigmatic-badlands-58618.herokuapp.com/api/v1/images", new_image)
         .catch(error => {
           if(error.response) {
             console.log(error.response);
