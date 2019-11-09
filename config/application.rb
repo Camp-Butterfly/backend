@@ -15,7 +15,7 @@ module Backend
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-	  def set_cors
+	  def set_access_control_headers
 	    headers['Access-Control-Allow-Origin'] = '*'
 	    headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
 	    headers['Access-Control-Request-Method'] = '*'
