@@ -27,6 +27,6 @@ class Api::V1::ImagesController < Api::V1::BaseController
   private
 
     def image_params
-      params.require(:image).permit(:id, :image_name, :butterfly_name, :location, :attachment)
+      params.require(:image).permit(:id, :image_file_name, :butterfly_name, :location, :attachment)
     end
 end
