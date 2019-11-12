@@ -67,3 +67,6 @@
 /basic/npm-debug.log*
 /basic/yarn-debug.log*
 /basic/yarn-error.log*
+
+# Ignore application configuration
+/config/application.yml

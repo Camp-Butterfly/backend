@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
 # add graphql to query database
 gem 'graphql'
 
@@ -12,6 +13,11 @@ gem 'responders'
 
 # Provides mount_uploader for POST file requests
 gem 'carrierwave'
+
+# Allow file uploads to AWS S3
+gem 'figaro'
+
+gem 'fog-aws'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
