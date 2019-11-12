@@ -70,3 +70,6 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore carrierwave configuration keys
+/config/initializers/carrierwave.rb
