@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
 # add graphql to query database
 gem 'graphql'
 
@@ -18,6 +17,8 @@ gem 'carrierwave'
 gem 'figaro'
 
 gem 'fog-aws'
+
+gem 'mini_magick'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
