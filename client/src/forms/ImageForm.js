@@ -8,10 +8,9 @@ class GalleryForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        image_file_name: '',
-        butterfly_name: '',
-        location: '',
-        attachment: ''
+        image_content: '',
+        latitude: '',
+        longitude: ''
     };
     this.updateImage = this.updateImage.bind(this);
     this.addImage = this.addImage.bind(this);
@@ -36,10 +35,9 @@ class GalleryForm extends Component {
     event.preventDefault();
     
     let new_image = { 
-        "image_file_name": this.state.image_name,
-        "butterfly_name": this.state.scientific_name,
-        "location": this.state.location,
-        "attachment": this.state.attachment
+        "image_content": this.state.image_name,
+        "longitude": this.state.scientific_name,
+        "latitude": this.state.location,
     };
     console.log(new_image);
     //let data = JSON.stringify(new_image,null);
@@ -65,17 +63,7 @@ class GalleryForm extends Component {
               <input
                   className="name"
                   type="string"
-                  name="butterfly_name"
-                  value={this.state.value}
-                  onChange={this.updateImage}
-                />
-            <label>
-            Scientific name:
-            </label>
-              <input
-                  className="name"
-                  type="string"
-                  name="scientific_name"
+                  name="image_content"
                   value={this.state.value}
                   onChange={this.updateImage}
                 />
@@ -83,10 +71,16 @@ class GalleryForm extends Component {
             <br/>
             Attach Image:
             </label>
-              <input
+              {/*<input
                   className="name"
                   type="file"
-                  name="attachment"
+                  name="longitude"
+                  value={this.state.value}
+                  onChange={this.updateImage}
+                />*/}<input
+                  className="name"
+                  type="string"
+                  name="latitude"
                   value={this.state.value}
                   onChange={this.updateImage}
                 />
@@ -97,7 +91,7 @@ class GalleryForm extends Component {
               <input
                   className="name"
                   type="string"
-                  name="location"
+                  name="latitude"
                   value={this.state.value}
                   onChange={this.updateImage}
                 />

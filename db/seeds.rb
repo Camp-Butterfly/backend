@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Image seed data
-10.times { Image.create!(image_file_name: "image", butterfly_name: "butterfly", location: "Knowhere") }
+10.times { Image.create!(image_content: "image", latitude: "butterfly", longitude: "Knowhere") }
 
 
 # Butterfly seed data
-1.times { Butterfly.create!(butterfly_name: "Brush-footed", scientific_name: "Nymphalidae", image_file_name: "brush-footed.png", description: "Brush-footed description.") }
-1.times { Butterfly.create!(butterfly_name: "Harvesters", scientific_name: "Miletinae", image_file_name: "harvests.png", description: "Harvesters description.") }
-1.times { Butterfly.create!(butterfly_name: "Metalmarks", scientific_name: "Riodinidae", image_file_name: "metalmarks.png", description: "Metalmarks description.") }
-1.times { Butterfly.create!(butterfly_name: "Parnassians/Swallowtails", scientific_name: "Papilionidae", image_file_name: "parnassians.png", description: "Parnassians/Swallowtails description.") }
-1.times { Butterfly.create!(butterfly_name: "Skippers", scientific_name: "Hesperiidae", image_file_name: "skippers.png", description: "Skippers description.") }
+#1.times { Butterfly.create!(butterfly_name: "Brush-footed", scientific_name: "Nymphalidae", image_file_name: "brush-footed.png", description: "Brush-footed description.") }
+#1.times { Butterfly.create!(butterfly_name: "Harvesters", scientific_name: "Miletinae", image_file_name: "harvests.png", description: "Harvesters description.") }
+#1.times { Butterfly.create!(butterfly_name: "Metalmarks", scientific_name: "Riodinidae", image_file_name: "metalmarks.png", description: "Metalmarks description.") }
+#1.times { Butterfly.create!(butterfly_name: "Parnassians/Swallowtails", scientific_name: "Papilionidae", image_file_name: "parnassians.png", description: "Parnassians/Swallowtails description.") }
+#1.times { Butterfly.create!(butterfly_name: "Skippers", scientific_name: "Hesperiidae", image_file_name: "skippers.png", description: "Skippers description.") }

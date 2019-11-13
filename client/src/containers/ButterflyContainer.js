@@ -9,17 +9,12 @@ class Query extends Component {
 
     return (
       <div className="query">
-        <div>Butterfly Name: {this.props.data.butterfly_name} </div>
+        <div>Butterfly Name: {this.props.data.image_content} </div>
             <br/>
-        <div>Scientific Name: {this.props.data.scientific_name} </div>
+        <div>Scientific Name: {this.props.data.latitude} </div>
             <br/>
-        <div>Image file name: {this.props.data.image_file_name} </div>
-            {/*<img 
-            	className="query-image"
-            	src={file_extension}></img>*/}
-            <br/>
-            {console.log(file_extension)}
-        <div>Description: {this.props.data.description} </div>
+        <div>Image file name: {this.props.data.longitude} </div>
+
       </div>
     );
   }
