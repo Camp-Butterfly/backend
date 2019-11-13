@@ -27,6 +27,6 @@ class Api::V1::ImagesController < Api::V1::BaseController
   private
 
     def image_params
-      params.require(:image).permit(:id, :image_content, :longitude, :longitude)
+      params.require(:image).permit(:id, :image_content, :latitude, :longitude)
     end
 end
