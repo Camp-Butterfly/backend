@@ -5,7 +5,6 @@ class Query extends Component {
 
   render() {
 
-  const file_extension = "../assets/images/" + this.props.data.attachment;
 
     return (
       <div className="query">

@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'graphql'
 
 # Provide cors access
-gem 'rack-cors'
+gem 'rack-cors', '>= 1.0.5'
 
 # Provides respond_to for GET json requests
 gem 'responders'
