@@ -1,14 +1,12 @@
 class Api::V1::ImagesController < Api::V1::BaseController
   def index
-    respond_with Image.all
+    #respond_with Image.all
+    respond_with Image.find params[:id]
   end
 
-  #def name
-   # respone_with Image.find(params[:butterfly_name])
-
-  #def new
-  #  @image = Image.new
-  #end
+#  def query
+#    respond_with Image.find params[:id]
+#  end
 
   def create
     respond_with :api, :v1, Image.create(image_params)
