@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# authentication gem
+gem 'bcrypt'
+
 # add graphql to query database
 gem 'graphql'
 
