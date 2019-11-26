@@ -1,6 +1,7 @@
 class Api::V1::ButterfliesController < Api::V1::BaseController
   def index
-    respond_with Butterfly.all
+    #respond_with Butterfly.all
+    respond_with Butterfly.find_by(butterfly_name: params[:butterfly_name])
   end
 
   def create
