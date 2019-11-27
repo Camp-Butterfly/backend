@@ -11,8 +11,8 @@
 
 
 # Butterfly seed data
-1.times { Butterfly.create!(butterfly_name: "Brush-footed", scientific_name: "Nymphalidae", image_file_name: "brush-footed.png", description: "Brush-footed description.") }
-1.times { Butterfly.create!(butterfly_name: "Harvesters", scientific_name: "Miletinae", image_file_name: "harvests.png", description: "Harvesters description.") }
-1.times { Butterfly.create!(butterfly_name: "Metalmarks", scientific_name: "Riodinidae", image_file_name: "metalmarks.png", description: "Metalmarks description.") }
-1.times { Butterfly.create!(butterfly_name: "Parnassians/Swallowtails", scientific_name: "Papilionidae", image_file_name: "parnassians.png", description: "Parnassians/Swallowtails description.") }
-1.times { Butterfly.create!(butterfly_name: "Skippers", scientific_name: "Hesperiidae", image_file_name: "skippers.png", description: "Skippers description.") }
+1.times { Butterfly.create!(butterfly_name: "brush_footed", scientific_name: "nymphalidae", image_file_name: "brush-footed.png", description: "Brush-footed description.") }
+1.times { Butterfly.create!(butterfly_name: "harvesters", scientific_name: "miletinae", image_file_name: "harvests.png", description: "Harvesters description.") }
+1.times { Butterfly.create!(butterfly_name: "metalmarks", scientific_name: "riodinidae", image_file_name: "metalmarks.png", description: "Metalmarks description.") }
+1.times { Butterfly.create!(butterfly_name: "parnassians", scientific_name: "papilionidae", image_file_name: "parnassians.png", description: "Parnassians/Swallowtails description.") }
+1.times { Butterfly.create!(butterfly_name: "skippers", scientific_name: "hesperiidae", image_file_name: "skippers.png", description: "Skippers description.") }
