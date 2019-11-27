@@ -1,7 +1,7 @@
 class Api::V1::ImagesController < Api::V1::BaseController
   def index
-    #respond_with Image.all
-    respond_with Image.find params[:id]
+    respond_with Image.all
+    #respond_with Image.find params[:id]
   end
 
 #  def query
