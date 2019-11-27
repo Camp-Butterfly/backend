@@ -19,13 +19,13 @@ class SearchForm extends Component {
         query: event.target.value.toUpperCase()
       });
     }
-
+/*
   fetchQueryResults(event) {
     event.preventDefault();
 
-    let search = "http://localhost:3001/api/v1/images.json";
+    // let search = "http://localhost:3001/api/v1/images.json";
 
-    //let search = "https://enigmatic-badlands-58618.herokuapp.com/api/v1/images.json";
+    let search = "https://enigmatic-spire-53426.herokuapp.com//api/v1/images.json";
     //{console.log(search)};
       axios.get(search)
       .then(result => {
@@ -33,8 +33,8 @@ class SearchForm extends Component {
           console.log(result.data);
         });
     }
+*/
 
-/*
     fetchQueryResults(event) {
     event.preventDefault();
 
@@ -51,7 +51,7 @@ class SearchForm extends Component {
           console.log(result.data);
         });
     }
-    */
+    
 
   render() {
 /*
