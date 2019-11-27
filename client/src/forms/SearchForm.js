@@ -23,7 +23,8 @@ class SearchForm extends Component {
   fetchQueryResults(event) {
     event.preventDefault();
 
-    let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/images.json";
+    let search = "http://localhost:3001/api/v1/images.json";
+
     //let search = "https://enigmatic-badlands-58618.herokuapp.com/api/v1/images.json";
     //{console.log(search)};
       axios.get(search)
@@ -33,12 +34,31 @@ class SearchForm extends Component {
         });
     }
 
-  render() {
+/*
+    fetchQueryResults(event) {
+    event.preventDefault();
 
+    let id = "Brush-footed";
+    //let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/images.json";
+    let search = "http://localhost:3001/api/v1/butterflies.json/";
+      axios.get(search, {
+        params: {
+            butterfly_name: id
+        }
+      })
+      .then(result => {
+          this.setState({result:result.data});
+          console.log(result.data);
+        });
+    }
+    */
+
+  render() {
+/*
     let result = this.state.result.map((properties) =>
         <ButterflyContainer data={properties} />
     );
-
+*/
     return (
       <form>
         <span>
@@ -57,7 +77,7 @@ class SearchForm extends Component {
                 Search
                 </button>
         </span>
-              {result}
+          {/*    {result}  */}
       </form>
 
     );
