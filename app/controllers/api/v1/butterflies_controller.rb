@@ -21,6 +21,6 @@ class Api::V1::ButterfliesController < Api::V1::BaseController
   private
 
   def butterfly_params
-    params.require(:butterfly).permit(:id, :butterfly_name, :scientific_name, :image_file_name, :description, :image)
+    params.require(:butterfly).permit(:id, :butterfly_name, :description)
   end
 end
