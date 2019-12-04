@@ -35,9 +35,9 @@ class GalleryForm extends Component {
     event.preventDefault();
     
     let new_image = { 
-        "image_content": this.state.image_name,
-        "longitude": this.state.scientific_name,
-        "latitude": this.state.location,
+        "image_content": this.state.image_content,
+        "longitude": this.state.longitude,
+        "latitude": this.state.latitude,
     };
     console.log(new_image);
     //let data = JSON.stringify(new_image,null);
@@ -58,7 +58,7 @@ class GalleryForm extends Component {
         </label>
         <br/>
             <label>
-            Butterfly name:
+            Image Content:
             </label>
               <input
                   className="name"
@@ -69,7 +69,7 @@ class GalleryForm extends Component {
                 />
             <label>
             <br/>
-            Attach Image:
+            Latitude:
             </label>
               {/*<input
                   className="name"
@@ -80,13 +80,13 @@ class GalleryForm extends Component {
                 />*/}<input
                   className="name"
                   type="string"
-                  name="latitude"
+                  name="longitude"
                   value={this.state.value}
                   onChange={this.updateImage}
                 />
             <br/>
              <label>
-             Location:
+             Longitude:
              </label>
               <input
                   className="name"
