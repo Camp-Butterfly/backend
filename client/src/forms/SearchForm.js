@@ -25,7 +25,7 @@ class SearchForm extends Component {
 
     // let search = "http://localhost:3001/api/v1/images.json";
 
-    let search = "https://enigmatic-spire-53426.herokuapp.com//api/v1/images.json";
+    let search = "https://enigmatic-spire-53426.herokuapp.com//api/v1/images.json/";
     //{console.log(search)};
       axios.get(search)
       .then(result => {
@@ -35,12 +35,13 @@ class SearchForm extends Component {
     }
 */
 
+
     fetchQueryResults(event) {
     event.preventDefault();
 
-    let id = "Brush-footed";
-    //let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/images.json";
-    let search = "http://localhost:3001/api/v1/butterflies.json/";
+    let id = "monarch";
+    //let search = "http://localhost:3001/api/v1/butterflies.json/";
+    let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/butterflies.json/";
       axios.get(search, {
         params: {
             butterfly_name: id
