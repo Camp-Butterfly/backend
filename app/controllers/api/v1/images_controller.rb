@@ -1,15 +1,15 @@
 class Api::V1::ImagesController < Api::V1::BaseController
+
+# endpoint to retriev all images stored in database.
   def index
     respond_with Image.all
     #respond_with Image.find params[:id]
   end
 
-#  def query
-#    respond_with Image.find params[:id]
-#  end
-
+# endpoint to classify image
   def create
     respond_with :api, :v1, Image.create(image_params)
+    
   end
 
   def destroy
