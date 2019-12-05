@@ -19,7 +19,7 @@ class SearchForm extends Component {
         query: event.target.value.toUpperCase()
       });
     }
-/*
+
   fetchQueryResults(event) {
     event.preventDefault();
 
@@ -33,9 +33,9 @@ class SearchForm extends Component {
           console.log(result.data);
         });
     }
-*/
+ 
 
-
+/*
     fetchQueryResults(event) {
     event.preventDefault();
 
@@ -52,7 +52,7 @@ class SearchForm extends Component {
           console.log(result.data);
         });
     }
-    
+    */
 
   render() {
 /*
