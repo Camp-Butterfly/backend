@@ -1,15 +1,21 @@
 class Api::V1::ImagesController < Api::V1::BaseController
 
-# endpoint to retriev all images stored in database.
+# endpoint to retrieve all images stored in database.
   def index
     respond_with Image.all
     #respond_with Image.find params[:id]
   end
 
-# endpoint to classify image
+# endpoint to create and classify image
   def create
-    respond_with :api, :v1, Image.create(image_params)
-    
+    #respond_with :api, :v1, Image.create(image_params)
+    Image.create(image_params)
+
+    #respond_with Image.find_by(longitude: params[:longitude])
+    image = Image.find_by(longitude: image_params[:longitude])
+
+    # returns json of result
+    respond_with image, json: image
   end
 
   def destroy
@@ -25,6 +31,6 @@ class Api::V1::ImagesController < Api::V1::BaseController
   private
 
     def image_params
-      params.require(:image).permit(:id, :image_content, :latitude, :longitude)
+      params.require(:image).permit(:id, :image_content, :longitude, :latitude)
     end
 end
