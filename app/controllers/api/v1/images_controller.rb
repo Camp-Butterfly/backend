@@ -10,12 +10,29 @@ class Api::V1::ImagesController < Api::V1::BaseController
   def create
     #respond_with :api, :v1, Image.create(image_params)
     Image.create(image_params)
+    
+    # pass this as argument to python function 
+    # image_params[:image_content]
+    obj = image_params[:longitude]
+
+    require 'rubypython'
+    RubyPython.start
+    #sample = RubyPython.import("test.sample")
+    json = RubyPython.import("test.sample")
+    #value = sample.sample().rubify
+    #cPickle = RubyPython.import("cPickle")
+    
+    # response = "Testing RubyPython." + obj
+    # p ("testin ruby")
+    json(obj)
+    RubyPython.stop
 
     #respond_with Image.find_by(longitude: params[:longitude])
-    image = Image.find_by(longitude: image_params[:longitude])
+# image = Image.find_by(longitude: image_params[:longitude])
 
     # returns json of result
-    respond_with image, json: image
+   respond_with response, json: response
+    #respond_with cPickle, json: cPickle
   end
 
   def destroy
