@@ -13,19 +13,19 @@ class Api::V1::ImagesController < Api::V1::BaseController
     
     # pass this as argument to python function 
     # image_params[:image_content]
-#02, 03    
-obj = image_params[:longitude]
 
+#02, 03; image as base-64
+img = image_params[:image_content]
+result = 'monarch'
     require 'rubypython'
     RubyPython.start  # start Python interpreter
 
 #03 
 grpc = RubyPython.import("grpc")
 np  = RubyPython.import("numpy")
-#requests = RubyPython.import("requests") # this module is problematic
+RubyPython.import("requests")
 #tf = RubyPython.import("tensorflow") # this module is problematic
 os  = RubyPython.import("os")
-
 
 #from tensorflow_serving.apis import predict_pb2
 #from tensorflow_serving.apis import prediction_service_pb2_grpc
@@ -43,7 +43,9 @@ os  = RubyPython.import("os")
 # del os.environ['https_proxy']
 #if os.environ.get('http_proxy'):
 # del os.environ['http_proxy']
-
+img = img + "cat"
+print np.char.upper("cat")
+#print (img)
 #def main(_):
 #  #Download image and convert to tensor
 #  img = image.load_img("test_image_ringlet.JPEG", target_size=(150,150))
@@ -68,12 +70,12 @@ os  = RubyPython.import("os")
 #if __name__ == '__main__':
 #  tf.compat.v1.app.run()
 
-
-#obj = attempt.mod(obj).rubify
+# some method that selects highest probability returned by tensorflow
+# greatest(result.probabilities)
 
 #02
-#obj = obj + "tomato"  # appends tomato to longitude param
-#p (obj)               # prints concat in python interpreter
+#img = img + "tomato"  # appends tomato to image_content param
+#p (img)               # prints concat in python interpreter
 
     RubyPython.stop  # stop Python interpreter
 
@@ -84,7 +86,9 @@ os  = RubyPython.import("os")
 #respond_with image, json: image
 
 # 02, 03; responds with concat after python script, import modifier script
-respond_with obj, json: obj
+result = Butterfly.find_by(butterfly_name: result)     
+
+respond_with result, json: result
 
   end
 
