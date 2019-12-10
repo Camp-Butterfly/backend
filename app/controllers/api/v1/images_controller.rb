@@ -15,7 +15,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
     # image_params[:image_content]
 
 #02, 03; image as base-64
-img = image_params[:image_content]
+img_c = image_params[:image_content]
 result = 'monarch'
     require 'rubypython'
     RubyPython.start(:python_exe => "python2.7")  # start Python interpreter
@@ -35,11 +35,10 @@ prediction_service_pb2_grpc = RubyPython.import("tensorflow_serving.apis.predict
 #from tensorflow.keras.preprocessing import image
 image = RubyPython.import("tensorflow.keras.preprocessing.image")
 
-#tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 
-#        'PredictionService host:port')
+#tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 'PredictionService host:port')
 #tf.compat.v1.app.flags.DEFINE_string('image', '','path to image in JPEG format')
 
-#FLAGS = tf.compat.v1.app.flags.FLAGS
+#FLAGS.replace(tf.compat.v1.app.flags.FLAGS)
 
 #  #IMAGE_PATH = 'test_image_ringlet.JPEG'
 
@@ -47,11 +46,12 @@ image = RubyPython.import("tensorflow.keras.preprocessing.image")
 # del os.environ['https_proxy']
 #if os.environ.get('http_proxy'):
 # del os.environ['http_proxy']
-img = img + "cat"
-print np.char.upper("cat")
+
 #print (img)
 #def main(_):
 #  #Download image and convert to tensor
+  eval_img = base64.b64decode(img_c)
+print eval_img
 #  img = image.load_img("test_image_ringlet.JPEG", target_size=(150,150))
 #  img_tensor = image.img_to_array(img)
 #  img_tensor = np.expand_dims(img_tensor, axis=0)
