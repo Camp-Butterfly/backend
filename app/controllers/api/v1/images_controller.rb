@@ -18,18 +18,22 @@ class Api::V1::ImagesController < Api::V1::BaseController
 img = image_params[:image_content]
 result = 'monarch'
     require 'rubypython'
-    RubyPython.start  # start Python interpreter
+    RubyPython.start(:python_exe => "python2.7")  # start Python interpreter
 
 #03 
 grpc = RubyPython.import("grpc")
 np  = RubyPython.import("numpy")
 RubyPython.import("requests")
-#tf = RubyPython.import("tensorflow") # this module is problematic
+tf = RubyPython.import("tensorflow") # this module is problematic
 os  = RubyPython.import("os")
+base64 = RubyPython.import("base64")
 
 #from tensorflow_serving.apis import predict_pb2
+predict_pb2 = RubyPython.import("tensorflow_serving.apis.predict_pb2")
 #from tensorflow_serving.apis import prediction_service_pb2_grpc
+prediction_service_pb2_grpc = RubyPython.import("tensorflow_serving.apis.prediction_service_pb2_grpc")
 #from tensorflow.keras.preprocessing import image
+image = RubyPython.import("tensorflow.keras.preprocessing.image")
 
 #tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 
 #        'PredictionService host:port')
@@ -89,7 +93,6 @@ print np.char.upper("cat")
 result = Butterfly.find_by(butterfly_name: result)     
 
 respond_with result, json: result
-
   end
 
   def destroy
