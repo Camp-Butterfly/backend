@@ -18,20 +18,21 @@ class Api::V1::ImagesController < Api::V1::BaseController
     require 'rubypython'
     RubyPython.start
     #sample = RubyPython.import("test.sample")
-    json = RubyPython.import("test.sample")
+    # json = RubyPython.import("test.sample")
     #value = sample.sample().rubify
     #cPickle = RubyPython.import("cPickle")
     
     # response = "Testing RubyPython." + obj
-    # p ("testin ruby")
-    json(obj)
-    RubyPython.stop
+     p ("testing rubyp")
+    #json(obj)
+    #RubyPython.stop
 
     #respond_with Image.find_by(longitude: params[:longitude])
-# image = Image.find_by(longitude: image_params[:longitude])
+image = Image.find_by(longitude: image_params[:longitude])     # 01; responds with image found
 
     # returns json of result
-   respond_with response, json: response
+respond_with image, json: image                                # 01
+   #respond_with obj, json: obj
     #respond_with cPickle, json: cPickle
   end
 
