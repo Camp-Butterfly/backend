@@ -6,21 +6,22 @@ class Api::V1::ImagesController < Api::V1::BaseController
     #respond_with Image.find params[:id]
   end
 
-# endpoint to create and classify image
+# endpoint to create and classify image that runs a python script 
+# to classify image using hosted docker container
   def create
     # creates new image in database    
     Image.create(image_params)
     
-#03; assigns image as base-64 to img_c
-img_c = image_params[:image_content]
-# instantiate result currently using testing value
-result = 'monarch'
+    #03; assigns image as base-64 to img_c
+    img_c = image_params[:image_content]
+    # instantiate result currently using testing value
+    result = 'monarch'
 
-# beginning of python implementation
+    # beginning of python implementation
     require 'rubypython'
     RubyPython.start(:python_exe => "python2.7")  # start Python interpreter
 
-      # imports dependencies
+      # IMPORTS DEPENDENCIES
       grpc = RubyPython.import("grpc")
       np  = RubyPython.import("numpy")
       RubyPython.import("requests")
@@ -28,14 +29,12 @@ result = 'monarch'
       os  = RubyPython.import("os")
       base64 = RubyPython.import("base64")
 
-      # imports modules
-      #from tensorflow_serving.apis import predict_pb2
+      # IMPORTS MODULES
       predict_pb2 = RubyPython.import("tensorflow_serving.apis.predict_pb2")
-      #from tensorflow_serving.apis import prediction_service_pb2_grpc
       prediction_service_pb2_grpc = RubyPython.import("tensorflow_serving.apis.prediction_service_pb2_grpc")
-      #from tensorflow.keras.preprocessing import image
       image = RubyPython.import("tensorflow.keras.preprocessing.image")
 
+      # DEFINES STRINGS TO BE USED IN SCRIPT
       #tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 'PredictionService host:port')
       #tf.compat.v1.app.flags.DEFINE_string('image', '','path to image in JPEG format')
 
@@ -43,16 +42,18 @@ result = 'monarch'
 
       #  #IMAGE_PATH = 'test_image_ringlet.JPEG'
 
-      #if os.environ.get('https_proxy'):
-      # del os.environ['https_proxy']
-      #if os.environ.get('http_proxy'):
-      # del os.environ['http_proxy']
+      if os.environ.get('https_proxy')
+       del os.environ['https_proxy']
+      end
+      if os.environ.get('http_proxy')
+       del os.environ['http_proxy']
+      end
 
       #print (img)
       #def main(_):
       #  #Download image and convert to tensor
-        eval_img = base64.b64decode(img_c)
-      print eval_img
+      #  eval_img = base64.b64decode(img_c)
+      #print eval_img
       #  img = image.load_img("test_image_ringlet.JPEG", target_size=(150,150))
       #  img_tensor = image.img_to_array(img)
       #  img_tensor = np.expand_dims(img_tensor, axis=0)
@@ -79,10 +80,9 @@ result = 'monarch'
       # greatest(result.probabilities)
     RubyPython.stop  # stop Python interpreter
 
-# 03; responds with concat after python script, import modifier script
-result = Butterfly.find_by(butterfly_name: result)     
-
-respond_with result, json: result
+    # 03; responds with concat after python script, import modifier script
+    result = Butterfly.find_by(butterfly_name: result)     
+    respond_with result, json: result
   end
 
   def destroy
