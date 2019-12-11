@@ -35,10 +35,10 @@ class Api::V1::ImagesController < Api::V1::BaseController
       image = RubyPython.import("tensorflow.keras.preprocessing.image")
 
       # DEFINES STRINGS TO BE USED IN SCRIPT
-      #tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 'PredictionService host:port')
-      #tf.compat.v1.app.flags.DEFINE_string('image', '','path to image in JPEG format')
+      tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 'PredictionService host:port')
+      tf.compat.v1.app.flags.DEFINE_string('image', '','path to image in JPEG format')
 
-      #FLAGS.replace(tf.compat.v1.app.flags.FLAGS)
+      FLAGS.replace(tf.compat.v1.app.flags.FLAGS)
 
       #  #IMAGE_PATH = 'test_image_ringlet.JPEG'
 
@@ -50,7 +50,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
       end
 
       #print (img)
-      #def main(_):
+      def main()
       #  #Download image and convert to tensor
       #  eval_img = base64.b64decode(img_c)
       #print eval_img
@@ -61,22 +61,23 @@ class Api::V1::ImagesController < Api::V1::BaseController
 
       #  print(data)  
 
-      #  channel = grpc.insecure_channel(FLAGS.server)
-      #  stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
-      #  #send request
-      #  request = predict_pb2.PredictRequest()
-      #  request.model_spec.name = 'test2'
-      #  request.model_spec.signature_name = 'serving_default'
-      #  request.inputs['input_image'].CopyFrom(
-      #  tf.make_tensor_proto(data,shape=[1,150,150,3])
-      #  )
-      #  result = stub.Predict(request,10.0)
-      #  print(result)
+        channel = grpc.insecure_channel(FLAGS.server)
+        stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
+        #send request
+        request = predict_pb2.PredictRequest()
+        request.model_spec.name = 'test2'
+        request.model_spec.signature_name = 'serving_default'
+        request.inputs['input_image'].CopyFrom(
+        tf.make_tensor_proto(data,shape=[1,150,150,3])
+        )
+        result = stub.Predict(request,10.0)
+        print(result)
 
-      #if __name__ == '__main__':
-      #  tf.compat.v1.app.run()
+      if __name__ == '__main__':
+        tf.compat.v1.app.run()
+      end
 
-      # some method that selects highest probability returned by tensorflow
+      # some method that selects highest probability from result json returned by tensorflow
       # greatest(result.probabilities)
     RubyPython.stop  # stop Python interpreter
 
