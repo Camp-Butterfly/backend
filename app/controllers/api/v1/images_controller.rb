@@ -38,17 +38,6 @@ class Api::V1::ImagesController < Api::V1::BaseController
       # for creating file-like object
       image_p = RubyPython.import("PIL.Image")
 
-      # DEFINES STRINGS TO BE USED IN SCRIPT
-      #tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 'PredictionService host:port')
-      #tf.compat.v1.app.flags.DEFINE_string('image', '','path to image in JPEG format')
-
-      #flags = ""
-      #def flags_helper(new_flag)
-      #  FLAGS.replace(new_flag)
-      #end
-      #flags.flags_helper tf.compat.v1.app.flags.FLAGS
-      #  #IMAGE_PATH = 'test_image_ringlet.JPEG'
-
       #if os.environ.get('https_proxy')
       # del os.environ['https_proxy']
       #end
@@ -56,54 +45,34 @@ class Api::V1::ImagesController < Api::V1::BaseController
       # del os.environ['http_proxy']
       #end
 
-      # creates message file using b64 encoded image
-      #def img_to_txt(e_file)
-      #    msg = b"<plain_text_msg:img>" + e_file
-      #    msg = msg + b"<!plain_text_msg>"
-      #    return msg
-
-      # creates file-like object
-      #def decode_img(msg)
-      #    msg = msg[msg.find(b"<plain_text_msg:img>") + len(b"<plain_text_msg:img>"):msg.find(b"<!plain_text_msg>")]
-      #    msg = base64.b64decode(msg)
-      #    buf = io.BytesIO(msg)
-      #    img = Image.open(buf)
-      #    return img
-
       #print (img)
       #def main()
       # #Download image and convert to tensor
-
         # decode base64 image
         img_c = base64.b64decode(img_c)
         # create file-like object of image
         buf = io.BytesIO(img_c)
         img = image_p.open(buf)
         # resize image to size 150 x 150
-      #  size = (150,150)
         img = img.resize([150,150])
-        print img
-      #  img = decode_img(img)
-      #print eval_img
-      #  img = image.load_img("test_image_ringlet.JPEG", target_size=(150,150))
+      #  print img
+        # map tensor
         img_tensor = image.img_to_array(img)
         img_tensor = np.expand_dims(img_tensor, axis=0)
         data = img_tensor
-        print img_tensor
       #  print(data)  
 
-      #  channel = grpc.insecure_channel(FLAGS.server)
-      #  stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
-      #  #send request
-      #  request = predict_pb2.PredictRequest()
-      #  request.model_spec.name = 'test2'
-      #  request.model_spec.signature_name = 'serving_default'
-      #  request.inputs['input_image'].CopyFrom(
-      #  tf.make_tensor_proto(data,shape=[1,150,150,3])
-      #  )
-      #  result = stub.Predict(request,10.0)
-      #  print(result)
-      #end
+        channel = grpc.insecure_channel('173.255.119.154:80')
+        stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
+        #send request
+        request = predict_pb2.PredictRequest()
+        request.model_spec.name = 'test2'
+        request.model_spec.signature_name = 'serving_default'
+        request.inputs['input_image'].CopyFrom(
+          tf.make_tensor_proto(data)
+        )
+        result = stub.Predict(request,10.0)
+        print(result)
       #if __name__ == '__main__'
       #  tf.compat.v1.app.run()
       #end
