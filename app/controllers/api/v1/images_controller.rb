@@ -12,7 +12,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
     # creates new image in database    
     Image.create(image_params)
     
-    #03; assigns image as base-64 to img_c
+    #03; assigns image content as base-64 to img_c
     img_c = image_params[:image_content]
     # instantiate result currently using testing value
     result = 'monarch'
@@ -25,14 +25,18 @@ class Api::V1::ImagesController < Api::V1::BaseController
       grpc = RubyPython.import("grpc")
       np  = RubyPython.import("numpy")
       RubyPython.import("requests")
-      tf = RubyPython.import("tensorflow") # this module is problematic
+      tf = RubyPython.import("tensorflow")
       os  = RubyPython.import("os")
+
       base64 = RubyPython.import("base64")
+      io = RubyPython.import("io")
 
       # IMPORTS MODULES
       predict_pb2 = RubyPython.import("tensorflow_serving.apis.predict_pb2")
       prediction_service_pb2_grpc = RubyPython.import("tensorflow_serving.apis.prediction_service_pb2_grpc")
       image = RubyPython.import("tensorflow.keras.preprocessing.image")
+      # for creating file-like object
+      image_p = RubyPython.import("PIL.Image")
 
       # DEFINES STRINGS TO BE USED IN SCRIPT
       tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 'PredictionService host:port')
@@ -49,15 +53,32 @@ class Api::V1::ImagesController < Api::V1::BaseController
        del os.environ['http_proxy']
       end
 
+      # creates message file using b64 encoded image
+      #def img_to_txt(e_file)
+      #    msg = b"<plain_text_msg:img>" + e_file
+      #    msg = msg + b"<!plain_text_msg>"
+      #    return msg
+
+      # creates file-like object
+      #def decode_img(msg)
+      #    msg = msg[msg.find(b"<plain_text_msg:img>") + len(b"<plain_text_msg:img>"):msg.find(b"<!plain_text_msg>")]
+      #    msg = base64.b64decode(msg)
+      #    buf = io.BytesIO(msg)
+      #    img = Image.open(buf)
+      #    return img
+
       #print (img)
       def main()
       #  #Download image and convert to tensor
-      #  eval_img = base64.b64decode(img_c)
+        #con_img = img_to_txt(image_c)
+        buf = io.BytersIO(image_c)
+        img = Image.open(buf)
+        img = decode_img(img)
       #print eval_img
       #  img = image.load_img("test_image_ringlet.JPEG", target_size=(150,150))
-      #  img_tensor = image.img_to_array(img)
-      #  img_tensor = np.expand_dims(img_tensor, axis=0)
-      #  data = img_tensor
+        img_tensor = image.img_to_array(img)
+        img_tensor = np.expand_dims(img_tensor, axis=0)
+        data = img_tensor
 
       #  print(data)  
 
@@ -72,11 +93,10 @@ class Api::V1::ImagesController < Api::V1::BaseController
         )
         result = stub.Predict(request,10.0)
         print(result)
-
-      if __name__ == '__main__':
+      end
+      if __name__ == '__main__'
         tf.compat.v1.app.run()
       end
-
       # some method that selects highest probability from result json returned by tensorflow
       # greatest(result.probabilities)
     RubyPython.stop  # stop Python interpreter
