@@ -27,7 +27,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
       RubyPython.import("requests")
       tf = RubyPython.import("tensorflow")
       os  = RubyPython.import("os")
-
+      # for creating file-like object
       base64 = RubyPython.import("base64")
       io = RubyPython.import("io")
 
@@ -38,16 +38,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
       # for creating file-like object
       image_p = RubyPython.import("PIL.Image")
 
-      #if os.environ.get('https_proxy')
-      # del os.environ['https_proxy']
-      #end
-      #if os.environ.get('http_proxy')
-      # del os.environ['http_proxy']
-      #end
-
-      #print (img)
-      #def main()
-      # #Download image and convert to tensor
+        # DOWNLOAD IMAGE AND CONVERT TO TENSOR
         # decode base64 image
         img_c = base64.b64decode(img_c)
         # create file-like object of image
@@ -64,7 +55,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
 
         channel = grpc.insecure_channel('173.255.119.154:80')
         stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
-        #send request
+        # send request
         request = predict_pb2.PredictRequest()
         request.model_spec.name = 'test2'
         request.model_spec.signature_name = 'serving_default'
@@ -73,9 +64,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
         )
         result = stub.Predict(request,10.0)
         print(result)
-      #if __name__ == '__main__'
-      #  tf.compat.v1.app.run()
-      #end
+
       # some method that selects highest probability from result json returned by tensorflow
       # greatest(result.probabilities)
     RubyPython.stop  # stop Python interpreter
