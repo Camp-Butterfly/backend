@@ -8,32 +8,33 @@ class Api::V1::ImagesController < Api::V1::BaseController
 
 # endpoint to create and classify image
   def create
-    #respond_with :api, :v1, Image.create(image_params)
+    # creates new image in database    
     Image.create(image_params)
     
-    # pass this as argument to python function 
-    # image_params[:image_content]
-
-#02, 03; image as base-64
+#03; assigns image as base-64 to img_c
 img_c = image_params[:image_content]
+# instantiate result 
 result = 'monarch'
+
+# begin of python implementation
     require 'rubypython'
     RubyPython.start(:python_exe => "python2.7")  # start Python interpreter
 
-#03 
-grpc = RubyPython.import("grpc")
-np  = RubyPython.import("numpy")
-RubyPython.import("requests")
-tf = RubyPython.import("tensorflow") # this module is problematic
-os  = RubyPython.import("os")
-base64 = RubyPython.import("base64")
+# imports dependencies
+  grpc = RubyPython.import("grpc")
+  np  = RubyPython.import("numpy")
+  RubyPython.import("requests")
+  tf = RubyPython.import("tensorflow") # this module is problematic
+  os  = RubyPython.import("os")
+  base64 = RubyPython.import("base64")
 
-#from tensorflow_serving.apis import predict_pb2
-predict_pb2 = RubyPython.import("tensorflow_serving.apis.predict_pb2")
-#from tensorflow_serving.apis import prediction_service_pb2_grpc
-prediction_service_pb2_grpc = RubyPython.import("tensorflow_serving.apis.prediction_service_pb2_grpc")
-#from tensorflow.keras.preprocessing import image
-image = RubyPython.import("tensorflow.keras.preprocessing.image")
+# imports modules
+  #from tensorflow_serving.apis import predict_pb2
+  predict_pb2 = RubyPython.import("tensorflow_serving.apis.predict_pb2")
+  #from tensorflow_serving.apis import prediction_service_pb2_grpc
+  prediction_service_pb2_grpc = RubyPython.import("tensorflow_serving.apis.prediction_service_pb2_grpc")
+  #from tensorflow.keras.preprocessing import image
+  image = RubyPython.import("tensorflow.keras.preprocessing.image")
 
 #tf.compat.v1.app.flags.DEFINE_string('server', '173.255.119.154:80', 'PredictionService host:port')
 #tf.compat.v1.app.flags.DEFINE_string('image', '','path to image in JPEG format')
@@ -76,20 +77,9 @@ print eval_img
 
 # some method that selects highest probability returned by tensorflow
 # greatest(result.probabilities)
-
-#02
-#img = img + "tomato"  # appends tomato to image_content param
-#p (img)               # prints concat in python interpreter
-
     RubyPython.stop  # stop Python interpreter
 
-# 01; responds with json of found image
-#image = Image.find_by(longitude: image_params[:longitude])     
-
-# 01
-#respond_with image, json: image
-
-# 02, 03; responds with concat after python script, import modifier script
+# 03; responds with concat after python script, import modifier script
 result = Butterfly.find_by(butterfly_name: result)     
 
 respond_with result, json: result
