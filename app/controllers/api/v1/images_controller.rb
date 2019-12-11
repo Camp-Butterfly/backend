@@ -15,7 +15,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
     #03; assigns image content as base-64 to img_c
     img_c = image_params[:image_content]
     # instantiate result currently using testing value
-    result = 'monarch'
+    result = 1
 
     # beginning of python implementation
     require 'rubypython'
@@ -53,26 +53,31 @@ class Api::V1::ImagesController < Api::V1::BaseController
         data = img_tensor
       #  print data  
 
-        channel = grpc.insecure_channel('35.232.7.83:80')
-        stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
-        # send request
-        request = predict_pb2.PredictRequest()
-        request.model_spec.name = 'test2'
-        request.model_spec.signature_name = 'serving_default'
-        request.inputs['input_image'].CopyFrom(
-          tf.make_tensor_proto(data)
-        )
-        result = stub.Predict(request,10.0)
+      #  channel = grpc.insecure_channel('35.232.7.83:80')
+      #  stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
+      #  # send request
+      #  request = predict_pb2.PredictRequest()
+      #  request.model_spec.name = 'test2'
+      #  request.model_spec.signature_name = 'serving_default'
+      #  request.inputs['input_image'].CopyFrom(
+      #    tf.make_tensor_proto(data)
+      #  )
+      #  result = stub.Predict(request,10.0)
         
 
         print(result)
       # some method that selects highest probability from result json returned by tensorflow
-      # num_position in array maps to butterfly species
-      # greatest(result.probabilities)
+      # map outputs.value to an array; num_position in array maps to butterfly species
+      # float max_ 
+      # find_max(outputs.value)
+      # for(int i = 0; i < array; i++)
+          # if array[i] > array[max_], 
+            # max_ = i
+        # return i
     RubyPython.stop  # stop Python interpreter
 
     # 03; responds with concat after python script, import modifier script
-    result = Butterfly.find_by(butterfly_name: result)     
+    result = Butterfly.find_by(id: result)     
     respond_with result, json: result
   end
 
