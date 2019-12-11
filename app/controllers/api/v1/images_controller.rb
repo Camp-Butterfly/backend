@@ -51,9 +51,9 @@ class Api::V1::ImagesController < Api::V1::BaseController
         img_tensor = image.img_to_array(img)
         img_tensor = np.expand_dims(img_tensor, axis=0)
         data = img_tensor
-      #  print(data)  
+      #  print data  
 
-        channel = grpc.insecure_channel('173.255.119.154:80')
+        channel = grpc.insecure_channel('35.232.7.83:80')
         stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
         # send request
         request = predict_pb2.PredictRequest()
@@ -63,9 +63,11 @@ class Api::V1::ImagesController < Api::V1::BaseController
           tf.make_tensor_proto(data)
         )
         result = stub.Predict(request,10.0)
-        print(result)
+        
 
+        print(result)
       # some method that selects highest probability from result json returned by tensorflow
+      # num_position in array maps to butterfly species
       # greatest(result.probabilities)
     RubyPython.stop  # stop Python interpreter
 
