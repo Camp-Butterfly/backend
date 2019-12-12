@@ -53,19 +53,19 @@ class Api::V1::ImagesController < Api::V1::BaseController
         data = img_tensor
       #  print data  
 
-      #  channel = grpc.insecure_channel('35.232.7.83:80')
-      #  stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
-      #  # send request
-      #  request = predict_pb2.PredictRequest()
-      #  request.model_spec.name = 'test2'
-      #  request.model_spec.signature_name = 'serving_default'
-      #  request.inputs['input_image'].CopyFrom(
-      #    tf.make_tensor_proto(data)
-      #  )
-      #  result = stub.Predict(request,10.0)
-        
-
+        channel = grpc.insecure_channel('34.68.117.217:8500')
+        stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
+        # send request
+        request = predict_pb2.PredictRequest()
+        request.model_spec.name = 'test2'
+        request.model_spec.signature_name = 'serving_default'
+        request.inputs['input_image'].CopyFrom(
+          tf.make_tensor_proto(data)
+        )
+        result = stub.Predict(request,10.0)
+        result.to_s
         print(result)
+        #channel.close()
       # some method that selects highest probability from result json returned by tensorflow
       # map outputs.value to an array; num_position in array maps to butterfly species
       # float max_ 
@@ -84,11 +84,13 @@ class Api::V1::ImagesController < Api::V1::BaseController
       #     max_ = i
       #   end
       # end
-    RubyPython.stop  # stop Python interpreter
+   # RubyPython.stop  # stop Python interpreter
 
     # 03; responds with concat after python script, import modifier script
     #result = Butterfly.find_by(id: max_)  
-    result = Butterfly.find_by(id: result)     
+    #result = Butterfly.find_by(id: result)
+    result.to_s   
+    print result  
     respond_with result, json: result
   end
 
