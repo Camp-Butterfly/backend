@@ -73,10 +73,21 @@ class Api::V1::ImagesController < Api::V1::BaseController
       # for(int i = 0; i < array; i++)
           # if array[i] > array[max_], 
             # max_ = i
-        # return i
+        # return max_
+
+      # uses push with outputs.value.float_val to add elements to an array
+      # arr = []
+      # max_ = 0
+      # for i in 0..4
+      #   arr.push(outputs.value.float_val)
+      #   if arr[i] > arr[max_]
+      #     max_ = i
+      #   end
+      # end
     RubyPython.stop  # stop Python interpreter
 
     # 03; responds with concat after python script, import modifier script
+    #result = Butterfly.find_by(id: max_)  
     result = Butterfly.find_by(id: result)     
     respond_with result, json: result
   end
