@@ -38,6 +38,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
       # for creating file-like object
       image_p = RubyPython.import("PIL.Image")
 
+      #def main(channel)
         # DOWNLOAD IMAGE AND CONVERT TO TENSOR
         # decode base64 image
         img_c = base64.b64decode(img_c)
@@ -54,7 +55,8 @@ class Api::V1::ImagesController < Api::V1::BaseController
       #  print data  
 
         # connect to insecure channel with docker container
-        channel = grpc.insecure_channel('34.68.117.217:8500')
+        options = [['grpc.min_reconnect_backoff_ms', 100]]
+        channel = grpc.insecure_channel('34.68.117.217:8500', options=options)
         stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
         # send request
         request = predict_pb2.PredictRequest()
@@ -63,11 +65,10 @@ class Api::V1::ImagesController < Api::V1::BaseController
         request.inputs['input_image'].CopyFrom(
           tf.make_tensor_proto(data)
         )
-        result = stub.Predict(request,10.0)
-        result.to_s
+        result = stub.Predict(request,100.0)
         print(result)
-        #channel.close()
-        
+        return channel
+
       # some method that selects highest probability from result after having converted to parseable object returned by tensorflow
       # map outputs.value to an array; num_position in array maps to butterfly species
       # [1: cabbage, 2: ringlet, 3: sulphur, 4: milkweed]
