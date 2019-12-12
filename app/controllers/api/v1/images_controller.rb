@@ -53,6 +53,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
         data = img_tensor
       #  print data  
 
+        # connect to insecure channel with docker container
         channel = grpc.insecure_channel('34.68.117.217:8500')
         stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
         # send request
@@ -66,8 +67,10 @@ class Api::V1::ImagesController < Api::V1::BaseController
         result.to_s
         print(result)
         #channel.close()
-      # some method that selects highest probability from result json returned by tensorflow
+        
+      # some method that selects highest probability from result after having converted to parseable object returned by tensorflow
       # map outputs.value to an array; num_position in array maps to butterfly species
+      # [1: cabbage, 2: ringlet, 3: sulphur, 4: milkweed]
       # float max_ 
       # find_max(outputs.value)
       # for(int i = 0; i < array; i++)
