@@ -17,6 +17,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
     # instantiate result currently using testing value
     result = 1
 
+    def main(img_c)
     # beginning of python implementation
     require 'rubypython'
     RubyPython.start(:python_exe => "python2.7")  # start Python interpreter
@@ -38,9 +39,11 @@ class Api::V1::ImagesController < Api::V1::BaseController
       # for creating file-like object
       image_p = RubyPython.import("PIL.Image")
 
-      #def main(channel)
         # DOWNLOAD IMAGE AND CONVERT TO TENSOR
         # decode base64 image
+        #if img_c = ''
+        #  return 
+        #end
         img_c = base64.b64decode(img_c)
         # create file-like object of image
         buf = io.BytesIO(img_c)
@@ -55,21 +58,41 @@ class Api::V1::ImagesController < Api::V1::BaseController
       #  print data  
 
         # connect to insecure channel with docker container
+        print("create channel")
         options = [['grpc.min_reconnect_backoff_ms', 100]]
         channel = grpc.insecure_channel('34.68.117.217:8500', options=options)
+        grpc.channel_ready_future(channel).result()
         stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
+
+        
         # send request
+        
+        print("send request")
         request = predict_pb2.PredictRequest()
         request.model_spec.name = 'test2'
         request.model_spec.signature_name = 'serving_default'
         request.inputs['input_image'].CopyFrom(
           tf.make_tensor_proto(data)
         )
-        result = stub.Predict(request,100.0)
+        print ("result received")
+
+        result = stub.Predict(request,timeout=100.0)
         print(result)
-        return channel
+        outputs_tensor_proto = result.outputs["outputs"]
+        #print('\n')
+        print(outputs_tensor_proto)
+      #shape = [dim.size for dim in outputs_tensor_proto.tensor_shape.dim]
+      #outputs = np.array(outputs_tensor_proto.float_val).reshape(shape)
+
+       #return channel
+       print("end of function")
+      end
 
       # some method that selects highest probability from result after having converted to parseable object returned by tensorflow
+        
+      #  outputs_tensor_proto = result.outputs["outputs"]
+      #shape = [dim.size for dim in outputs_tensor_proto.tensor_shape.dim]
+      #outputs = np.array(outputs_tensor_proto.float_val).reshape(shape)
       # map outputs.value to an array; num_position in array maps to butterfly species
       # [1: cabbage, 2: ringlet, 3: sulphur, 4: milkweed]
       # float max_ 
@@ -80,21 +103,20 @@ class Api::V1::ImagesController < Api::V1::BaseController
         # return max_
 
       # uses push with outputs.value.float_val to add elements to an array
-      # arr = []
-      # max_ = 0
-      # for i in 0..4
-      #   arr.push(outputs.value.float_val)
-      #   if arr[i] > arr[max_]
-      #     max_ = i
-      #   end
-      # end
-   # RubyPython.stop  # stop Python interpreter
+      #arr = []
+      #max_ = 0
+      #for i in 0..4
+      #  arr.push(outputs.value.float_val)
+      #  if arr[i] > arr[max_]
+      #    max_ = i
+      #  end
+      #end
+  #  RubyPython.stop  # stop Python interpreter
 
     # 03; responds with concat after python script, import modifier script
     #result = Butterfly.find_by(id: max_)  
     #result = Butterfly.find_by(id: result)
-    result.to_s   
-    print result  
+    main img_c
     respond_with result, json: result
   end
 
