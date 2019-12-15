@@ -21,7 +21,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
       RubyPython.start(:python_exe => "python2.7")  # start Python interpreter
 
         # IMPORTS DEPENDENCIES
-        types = RubyPython.import("types")
+        #types = RubyPython.import("types")
         grpc = RubyPython.import("grpc")
         np  = RubyPython.import("numpy")
         RubyPython.import("requests")
@@ -31,6 +31,7 @@ class Api::V1::ImagesController < Api::V1::BaseController
         base64 = RubyPython.import("base64")
         io = RubyPython.import("io")
         operator = RubyPython.import("operator")
+        #threading = RubyPython.import("threading")
 
         # IMPORTS MODULES
         predict_pb2 = RubyPython.import("tensorflow_serving.apis.predict_pb2")
@@ -58,24 +59,31 @@ class Api::V1::ImagesController < Api::V1::BaseController
         #  print data  
 
           # connect to insecure channel with docker container
-  #print("\ncreate channel")
+#  print("\ncreate channel\n")
           options = [['grpc.min_reconnect_backoff_ms', 100]]
-          channel = grpc.insecure_channel('192.168.99.100:8500', options=options)
+#  print(options)
+          #channel = grpc.insecure_channel('192.168.99.100:8500', options=options)
+          channel = grpc.insecure_channel('34.68.117.217:8500', options=options)
+
           grpc.channel_ready_future(channel).result()
           stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
 
           
           # send request
-  #print("\nsend request")
+#  print("\nsend request")
           request = predict_pb2.PredictRequest()
-          request.model_spec.name = 'testmodel'
+#  print channel
+          #request.model_spec.name = 'testmodel'
+          request.model_spec.name = 'test2'
+
           request.model_spec.signature_name = 'serving_default'
           request.inputs['input_image'].CopyFrom(
             tf.make_tensor_proto(data)
           )
-  #print ("\nresult received\n")
-          result = stub.Predict(request,10.0)
 
+          result = stub.Predict(request,100.0)
+          channel.close()
+#  print ("\nresult received\n")
           # map predictions to numpy array
           floats = np.array(result.outputs['dense_1/Softmax:0'].float_val)
           # find position of max value of floats array
@@ -95,13 +103,16 @@ class Api::V1::ImagesController < Api::V1::BaseController
             return "sulphur"
           end
   #print types.TypeType(res)
-  #print("\n")
+#  print("\nEnd of function")
       return "milkweed"
+      RubyPython.stop  # stop Python interpreter
     end     
-  RubyPython.stop  # stop Python interpreter
-    
+ # RubyPython.stop  # stop Python interpreter
+
     response = main img_c
     result = Butterfly.find_by(butterfly_name: response)     
+#  print("\nEnd of method")  
+
     respond_with result, json: result
   end
 
