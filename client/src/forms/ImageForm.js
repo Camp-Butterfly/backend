@@ -25,10 +25,10 @@ class GalleryForm extends Component {
       this.setState({
           [name]: filename
       });
-      console.log("pathname");
-      console.log(value.readAsDataURL);
+    //  console.log("pathname");
+    //  console.log(value.readAsDataURL);
       // var filename = value.replace(/^.*\\/, "");
-      console.log(filename);
+    //  console.log(filename);
     }
 
   async addImage(event) {
@@ -39,7 +39,7 @@ class GalleryForm extends Component {
         "longitude": this.state.longitude,
         "latitude": this.state.latitude,
     };
-    console.log(new_image);
+    // console.log(new_image);
     //let data = JSON.stringify(new_image,null);
     //await axios.post("http://enigmatic-spire-53426.herokuapp.com/api/v1/images?", new_image)
     await axios.post("http://localhost:3001/api/v1/images?", new_image)
