@@ -101,16 +101,8 @@ class Api::V1::ImagesController < Api::V1::BaseController
   RubyPython.stop  # stop Python interpreter
     
     response = main img_c
-#print("\n")
-#print response
-#print ("\n")
-#print result
-    sample = "milkweed"
-    @result = Butterfly.find_by(butterfly_name: sample)
-print ("\n")
-    print @result
-print ("\n")
-    #respond_with @result
+    result = Butterfly.find_by(butterfly_name: response)     
+    respond_with result, json: result
   end
 
   def destroy
