@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import '../App.css';
 import axios from 'axios';
-import ButterflyContainer from '../containers/ButterflyContainer.js';
+// import ButterflyContainer from '../containers/ButterflyContainer.js';
 
 class SearchForm extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class SearchForm extends Component {
         query: event.target.value.toUpperCase()
       });
     }
-
+/*
   fetchQueryResults(event) {
     event.preventDefault();
 
@@ -35,11 +35,11 @@ class SearchForm extends Component {
     }
  
 
-/*
+*/
     fetchQueryResults(event) {
     event.preventDefault();
 
-    let id = "monarch";
+    let id = "milkweed";
     //let search = "http://localhost:3001/api/v1/butterflies.json/";
     let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/butterflies.json/";
       axios.get(search, {
@@ -52,7 +52,7 @@ class SearchForm extends Component {
           console.log(result.data);
         });
     }
-    */
+    
 
   render() {
 /*

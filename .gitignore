@@ -22,7 +22,7 @@
 /tmp/cache/bootsnap-compile-cache/
 /client/node_modules/.cache/babel-loader/*
 /client/node_modules/.cache/eslint-loader/*
-
+/client/node_modules/*
 # Ignore the default SQLite database.
 /server/db/*.sqlite3
 /server/db/*.sqlite3-journal
