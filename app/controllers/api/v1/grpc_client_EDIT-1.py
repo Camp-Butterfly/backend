@@ -25,9 +25,9 @@ def main(channel):
   
   # establish channel to docker image container
     # local container
-    #channel = grpc.insecure_channel('192.168.99.100:8500')
-    #channel = grpc.insecure_channel('34.68.117.217:8500')
-    channel = grpc.insecure_channel('35.193.112.218:8500')
+    #channel = grpc.insecure_channel('192.168.99.100:8500') #local
+    #channel = grpc.insecure_channel('34.68.117.217:8500') #test2
+    channel = grpc.insecure_channel('35.193.112.218:8500') #model
     grpc.channel_ready_future(channel).result()
   # create variable for service that sends object to channel
     stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
