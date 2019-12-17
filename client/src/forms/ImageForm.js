@@ -39,12 +39,14 @@ class GalleryForm extends Component {
         "longitude": this.state.longitude,
         "latitude": this.state.latitude,
     };
+    let response = ''
     // console.log(new_image);
     //let data = JSON.stringify(new_image,null);
     //await axios.post("http://enigmatic-spire-53426.herokuapp.com/api/v1/images?", new_image)
     await axios.post("http://127.0.0.1:5000/api/v1/model", new_image)
         .then(result => {
          // this.setState({result:result.data});
+         response = result.data
           console.log(result.data);
         })
         .catch(error => {
@@ -52,6 +54,27 @@ class GalleryForm extends Component {
             console.log(error.response);
           }
         });
+    let id = ''
+    if (response === 0)
+      id = 'cabbage'
+    else if (response === 1)
+      id = 'ringlet'
+    else if (response === 2)
+      id = 'sulphur'
+    else
+      id = 'milkweed'
+
+    //let search = "http://localhost:3001/api/v1/butterflies.json/";
+    let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/butterflies.json/";
+      axios.get(search, {
+        params: {
+            butterfly_name: id
+        }
+      })
+      .then(result => {
+          this.setState({result:result.data});
+          console.log(result.data);
+        });    
     }
 
 // basic add image form
