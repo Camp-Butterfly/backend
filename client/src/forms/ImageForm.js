@@ -43,7 +43,8 @@ class GalleryForm extends Component {
     // console.log(new_image);
     //let data = JSON.stringify(new_image,null);
     //await axios.post("http://enigmatic-spire-53426.herokuapp.com/api/v1/images?", new_image)
-    await axios.post("http://127.0.0.1:5000/api/v1/model", new_image)
+    //await axios.post("https://serene-wildwood-86252.herokuapp.com/api/v1/model", new_image)
+    await axios.post("http://agile-temple-77204.herokuapp.com/api/v1/model", new_image)
         .then(result => {
          // this.setState({result:result.data});
          response = result.data
