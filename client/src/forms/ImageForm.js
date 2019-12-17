@@ -18,12 +18,11 @@ class GalleryForm extends Component {
 
   updateImage(event) {
     const target = event.target;
-    const value = target.value;
-    const name = target.name;
-    const filename = value.replace(/^.*\\/, "");
+    let value = target.value;
 
+    const name = target.name;
       this.setState({
-          [name]: filename
+          [name]: value
       });
     //  console.log("pathname");
     //  console.log(value.readAsDataURL);
@@ -40,11 +39,11 @@ class GalleryForm extends Component {
         "latitude": this.state.latitude,
     };
     let response = ''
-    // console.log(new_image);
+    console.log(new_image);
     //let data = JSON.stringify(new_image,null);
     //await axios.post("http://enigmatic-spire-53426.herokuapp.com/api/v1/images?", new_image)
     //await axios.post("https://serene-wildwood-86252.herokuapp.com/api/v1/model", new_image)
-    await axios.post("http://agile-temple-77204.herokuapp.com/api/v1/model", new_image)
+    await axios.post("http://127.0.0.1:5000/api/v1/model", new_image)
         .then(result => {
          // this.setState({result:result.data});
          response = result.data
@@ -62,8 +61,10 @@ class GalleryForm extends Component {
       id = 'ringlet'
     else if (response === 2)
       id = 'sulphur'
-    else
+    else if (response === 3)
       id = 'milkweed'
+    else
+      id = 'none'
 
     //let search = "http://localhost:3001/api/v1/butterflies.json/";
     let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/butterflies.json/";
