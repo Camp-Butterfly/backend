@@ -70,20 +70,23 @@ console.log(new_image);
     }
     else {
       id = 'none'
+      //this.setState({result: id})
     }
 
-    // Query the backend API for the database
-    //let search = "http://localhost:3001/api/v1/butterflies.json/";
-    let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/butterflies.json/";
-      axios.get(search, {
-        params: {
-            butterfly_name: id
-        }
-      })
-      .then(result => {
-          this.setState({result:result.data});
-          console.log(result.data);
-        });    
+    // conditional Query the backend API for the database
+    if(id != 'none') {
+      //let search = "http://localhost:3001/api/v1/butterflies.json/";
+      let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/butterflies.json/";
+        axios.get(search, {
+          params: {
+              butterfly_name: id
+          }
+        })
+        .then(result => {
+            this.setState({result:result.data});
+            console.log(result.data);
+          });  
+        }  
     }
 
 // basic add image form
