@@ -10,7 +10,7 @@ from tensorflow_serving.apis import predict_pb2
 from tensorflow_serving.apis import prediction_service_pb2_grpc
 from tensorflow.keras.preprocessing import image
 
-def main(_):
+def main(channel):
 
   # Download image 
     img = image.load_img("cabbage.jpg", target_size=(150,150))
@@ -24,20 +24,28 @@ def main(_):
     print(data)  
   
   # establish channel to docker image container
-    channel = grpc.insecure_channel('34.68.232.65:8500')
+    # local container
+    #channel = grpc.insecure_channel('192.168.99.100:8500')
+    #channel = grpc.insecure_channel('34.68.117.217:8500')
+    channel = grpc.insecure_channel('35.193.112.218:8500')
+    grpc.channel_ready_future(channel).result()
   # create variable for service that sends object to channel
     stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
   # assign values to props of request
     request = predict_pb2.PredictRequest()
+    # local container
+    #request.model_spec.name = 'testmodel'
+    #request.model_spec.name = 'test2'
     request.model_spec.name = 'model'
     request.model_spec.signature_name = 'serving_default'
-    request.inputs['input_image'].CopyFrom(
+    request.inputs['conv2d_input'].CopyFrom(
   	tf.make_tensor_proto(data,shape=[1,150,150,3])
     )
     #send request to docker image container
     result = stub.Predict(request,10.0)
   # response from model
     print(result)
+
 
 # creates python executable
 if __name__ == '__main__':
