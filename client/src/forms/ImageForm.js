@@ -33,14 +33,14 @@ class GalleryForm extends Component {
   async addImage(event) {
     event.preventDefault();
     
+    // map props to image object
     let new_image = { 
         "image_content": this.state.image_content,
         "longitude": this.state.longitude,
         "latitude": this.state.latitude,
     };
     let response = ''
-    console.log(new_image);
-    //let data = JSON.stringify(new_image,null);
+console.log(new_image);
     //await axios.post("http://enigmatic-spire-53426.herokuapp.com/api/v1/images?", new_image)
     //await axios.post("https://serene-wildwood-86252.herokuapp.com/api/v1/model", new_image)
     await axios.post("http://127.0.0.1:5000/api/v1/model", new_image)
@@ -55,17 +55,24 @@ class GalleryForm extends Component {
           }
         });
     let id = ''
-    if (response === 0)
+    // check id of response
+    if (response === 0) {
       id = 'cabbage'
-    else if (response === 1)
+    }
+    else if (response === 1) {
       id = 'ringlet'
-    else if (response === 2)
+    }
+    else if (response === 2) {
       id = 'sulphur'
-    else if (response === 3)
+    }
+    else if (response === 3) {
       id = 'milkweed'
-    else
+    }
+    else {
       id = 'none'
+    }
 
+    // Query the backend API for the database
     //let search = "http://localhost:3001/api/v1/butterflies.json/";
     let search = "https://enigmatic-spire-53426.herokuapp.com/api/v1/butterflies.json/";
       axios.get(search, {
