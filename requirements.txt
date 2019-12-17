@@ -1,6 +1,0 @@
-grpc
-numpy
-requests
-tensorflow
-pybase64
-pyio
